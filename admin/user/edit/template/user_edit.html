@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" href="../../common/css/main.css" type="text/css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="../../common/js/jquery.upload.js"></script>
+<script type="text/javascript" src="../upload/js/user_up.js"></script>
+<title>管理画面:ユーザー編集</title>
+</head>
+<body>
+	<div class="mainContainer">
+		<div class="headContainer">
+			<div class="headWrap">
+				<h1>UNDEFIND</h1>
+				<p>
+					<a href="http://beyata.minibird.jp/">サイトを確認</a>　|　
+					<a href="../../?out=2NbLQLLmZiwWTMtbRttR">ログアウト</a>
+				</p>
+			</div>
+		</div>
+		<div class="naviContainer">
+			<ul>
+				<li><a href="../../user">ユーザ</a></li>
+				<li><a href="../../artist">アーティスト</a></li>
+				<li><a href="../../audition">オーディション</a></li>
+				<li><a href="../../news">ニュース</a></li>
+				<li><a href="../../movie">動画管理</a></li>
+				<li><a href="../../sound">音楽管理</a></li>
+			</ul>
+		</div>
+		<div class="contentContainer">
+			<div class="titleBox">
+				<h2>ユーザー管理画面</h2>
+			</div>
+			<div class="oneColumnsBox">
+			<h3>ユーザー編集</h3>
+			[data_s:err_det]
+			<p>ユーザー情報を編集します。</p>
+			<form action="" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="user_no" value="[data_s:seq_num]" />
+				<table class="nomalTableDeco">
+				<tr>
+				<td>ログインID</td>
+				<td class="white">
+				<input type="text" name="login_id" value="[data_s:login_id]" /></td>
+				<td>サムネイル画像</td>
+				</tr>
+				<tr>
+				<td>ユーザーID</td>
+				<td class="white">
+				[data_s:user_id]</td>
+				<td rowspan="19" class="white nomalTableCenter">
+				<input type="hidden" name="user_thum" value="[data_s:user_thum]" />
+	 			<input type="file" name="up_new" id="up_new" />
+				[data_s:user_thum_add]
+				</td>
+				</tr>
+				<tr>
+				<td>ニックネーム</td>
+				<td class="white">
+				<input type="text" name="user_name" value="[data_s:user_name]" /></td>
+				</tr>
+				<tr>
+				<td>名前</td>
+				<td class="white">
+				<input type="text" name="name" value="[data_s:name]" /></td>
+				</tr>
+				<tr>
+				<td>カナ</td>
+				<td class="white">
+				<input type="text" name="kana" value="[data_s:kana]" /></td>
+				</tr>
+				<tr>
+				<td>生年月日</td>
+				<td class="white">
+				<select name="year">[data_s:year_form]</select>年
+				<select name="month">[data_s:month_form]</select>月
+				<select name="day">[data_s:day_form]</select>日
+				</td>
+				</tr>
+				<tr>
+				<td>性別</td>
+				<td class="white">[data_s:sex_form]</td>
+				</tr>
+				<tr>
+				<td>メールアドレス</td>
+				<td class="white">[data_s:mail]</td>
+				</tr>
+				<tr>
+				<td>郵便番号</td>
+				<td class="white">-(ハイフン)を抜いた数字7ケタ<br />
+				<input type="text" name="zip" value="[data_s:zip]" /></td>
+				</tr>
+				<tr>
+				<td>都道府県</td>
+				<td class="white"><input type="text" name="address1" value="[data_s:address1]" /></td>
+				</tr>
+				<tr>
+				<td>住所</td>
+				<td class="white"><input type="text" name="address2" value="[data_s:address2]" /></td>
+				</tr>
+				<tr>
+				<td>総ポイント</td>
+				<td class="white">無料ポイント：<input type="text" name="free_point" value="[data_s:free_point]" />&nbsp;&nbsp;課金ポイント：<input type="text" name="pay_point" value="[data_s:pay_point]" /></td>
+				</tr>
+				<tr>
+				<td>登録日時</td>
+				<td class="white">[data_s:reg_date]</td>
+				</tr>
+				<tr>
+				<td>更新日時</td>
+				<td class="white">[data_s:renew_date]</td>
+				</tr>
+				<tr>
+				<td>ログイン日時</td>
+				<td class="white">[data_s:login_date]</td>
+				</tr>
+				<tr>
+				<td colspan="2" class="white nomalTableCenter">
+				<input type="submit" name="user_edit_check" value="編集確認" class="formBtn" />
+				</td>
+				</tr>
+				</table>
+				</form>
+			</div>
+		</div>
+		<div class="footContainer">
+			<address id="copyright">
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

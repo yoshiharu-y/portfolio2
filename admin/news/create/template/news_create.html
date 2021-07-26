@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" href="../../common/css/main.css" type="text/css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="../../common/js/jquery.upload.js"></script>
+<script type="text/javascript" src="../upload/js/audition_up.js"></script>
+<title>管理画面:告知記事新規作成</title>
+</head>
+<body>
+	<div class="mainContainer">
+		<div class="headContainer">
+			<div class="headWrap">
+				<h1>UNDEFIND</h1>
+				<p>
+					<a href="http://beyata.minibird.jp/">サイトを確認</a>　|　
+					<a href="../../?out=2NbLQLLmZiwWTMtbRttR">ログアウト</a>
+				</p>
+			</div>
+		</div>
+		<div class="naviContainer">
+			<ul>
+				<li><a href="../../user">ユーザ</a></li>
+				<li><a href="../../artist">アーティスト</a></li>
+				<li><a href="../../audition">オーディション</a></li>
+				<li><a href="../../news">ニュース</a></li>
+				<li><a href="../../movie">動画管理</a></li>
+				<li><a href="../../sound">音楽管理</a></li>
+			</ul>
+		</div>
+		<div class="contentContainer">
+			<div class="titleBox">
+				<h2>ニュース＆インフォメーション管理画面</h2>
+			</div>
+			<div class="oneColumnsBox">
+			<h3>告知記事新規作成</h3>
+			[data_s:err_det]
+			<p>ニュース＆インフォメーションの告知記事を新規作成します。</p>
+			<form action="" method="post" enctype="multipart/form-data">
+			<!--↓改行コードを判断するので決してescape_textにかかってる改行はなくしてはいけない↓-->
+			<textarea name="escape_text" style="display:none;">
+			</textarea>
+			<!--↑改行コードを判断するので決してescape_textにかかってる改行はなくしてはいけない↑-->
+				<table class="nomalTableDeco">
+				<tr>
+				<td>告知タイトル</td>
+				<td class="white"><input type="text" name="news_title" value="[data_s:news_title]" size="50" /></td>
+				</tr>
+				<tr>
+				<td>告知カテゴリ</td>
+				<td class="white">
+				<select name="news_category">
+				<option value="新着情報" selected="selected" >新着情報</option>
+				</select>
+				</td>
+				</tr>
+				<tr>
+				<td>告知詳細</td>
+				<td class="white">
+				<p class="red">リンクさせたい箇所はlink:[URL][文章]としてください。</p>
+				<textarea cols="65" rows="9" name="news_detail">[data_s:news_detail]</textarea></td>
+				</tr>
+				<tr>
+				<td>表示方法</td>
+				<td class="white">
+				<select name="news_view">
+				<option value="タイトルのみ" selected="selected" >タイトルのみ</option>
+				<option value="告知詳細まで表示" >告知詳細まで表示</option>
+				</select>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2" class="white nomalTableCenter">
+				<input type="submit" name="news_create_check" value="内容確認" class="formBtn" />
+				</td>
+				</tr>
+				</table>
+				</form>
+			</div>
+		</div>
+		<div class="footContainer">
+			<address id="copyright">
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

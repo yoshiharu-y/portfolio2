@@ -1,0 +1,162 @@
+/* CSS Document */
+
+.registBox
+{
+	width:610px;
+	margin:70px auto 0 auto;
+	border-top:2px solid #d3dae6;
+	padding:15px;
+	overflow:hidden;
+	_zoom:1;
+}
+
+.title
+{
+	background:url(../../common/images/icon/registration_graphic.png) left no-repeat;
+	padding-left:4.5em;
+}
+
+.title h3
+{
+	font-weight:bold;
+	margin-bottom:0.5em;
+}
+
+.title p
+{
+	font-size:0.75em;
+	line-height:1.3;
+}
+
+.title p span
+{
+	font-weight:bold;
+}
+
+.regist
+{
+	background:#ededed;
+	width:610px;
+	margin:0 auto 30px auto;
+	padding:15px;
+	border-top:1px solid #d0d0d0;
+	overflow:hidden;
+	_zoom:1;
+}
+
+.regist dl
+{
+	width:400px;
+	margin:0 auto;
+}
+
+.regist dl dt
+{
+	clear: left;
+	float: left;
+	font-size:80%;
+	font-weight:bold;
+	color:#666666;
+	margin: 0 0 0.8em;
+	width: 11em;
+	padding-top:1em;
+	padding-right:1em;
+	text-align:right;
+}
+
+.regist dl dd
+{
+	margin-bottom: 0.5em;
+	margin-left: 12em;
+	font-size:80%;
+	color:#666666;
+}
+
+.regist dl dd input
+{
+	border:1px solid #bdc7d8;
+	padding:0.5em;
+}
+
+.regist dl dd select
+{
+	border:1px solid #bdc7d8;
+	padding:0.5em;
+}
+
+.regist dl dd.radio
+{
+	padding-top:0.9em;
+}
+
+.regist dl dd .submit
+{
+    display:block;
+    width:62px;
+    height:25px;
+    padding:0;
+    border:0;
+    background:url(../../common/images/conf_btn.gif) no-repeat left top;
+    text-indent:-9898px;
+    font-size: 0px;
+    line-height: 0px;
+    cursor:pointer;
+}
+
+.regist dl dd .submit:hover,
+.regist dl dd .submit:focus {
+    background-position:left -25px;
+}
+
+.text1
+{
+	font-size:85%;
+	margin-left:1em;
+	line-height:2em;
+}
+
+.text1 a
+{
+	text-decoration:none;
+	color:#3b5998;
+	font-weight:bold;
+}
+
+.text1 a:hover
+{
+	text-decoration:underline;
+}
+
+.text2
+{
+	font-size:85%;
+	line-height:1.5em;
+}
+
+.text2 a
+{
+	text-decoration:none;
+	color:#3b5998;
+	font-weight:bold;
+}
+
+.text2 a:hover
+{
+	text-decoration:underline;
+}
+
+.coutionBox
+{
+	border:1px solid #dd3c10;
+	background:#ffebe8;
+	padding:1em;
+	font-size:0.75em;
+	margin-bottom:20px;
+}
+
+.footer
+{
+	font-size:0.8em;
+	padding-top:10px;
+	color:#666666;
+}

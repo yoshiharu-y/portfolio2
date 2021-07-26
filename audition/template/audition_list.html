@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Language" content="ja" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	
+	<meta name="Author" content="" />
+	<meta name="copyright" content="" />
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+	
+	
+	
+	<link rel="stylesheet" href="../common/css/default.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../common/css/common.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/audition.css" type="text/css" media="all" />
+	
+	<script type="text/javascript" src="../common/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../common/js/jquery.corner.js"></script>
+
+	<title>オーディション一覧</title>
+	
+	<script type="text/javascript">
+		$('.top').corner("top 7px");
+		$('.bottom').corner("bottom 7px");
+		$('.wrap').corner("bottom 7px");
+	</script>
+</head>
+<body>
+	<div class="header">
+		<div class="header_box">
+			<h1>
+				<a href="http://beyata.minibird.jp/">
+					<img src="../common/images/logo.gif" width="115" height="20" alt="UnDeFiNd" />
+				</a>
+			</h1>
+			<div class="search_box">
+				<form action="../search/" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="search" />
+					<input type="text" name="search_text" value="アーティスト名を検索" class="text" />
+					<input type="submit" class="search_btn" />
+				</form>
+			</div>
+			<div class="header_navi">
+				<p>
+					<!--<span>[data_s:user_name]</span>-->
+					<span><a href="">アカウント設定 ▼</a></span>
+					<span><a href="">その他 ▼</a></span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="ContentWrap_audition">
+			<div class="auditionTitle top">
+				<h3>
+					ZIPPOオーディション
+				</h3>
+			</div>
+			<div class="auditionWrap">
+			[for_audition]
+				<p>
+					<a href="[data_s:aud_link]">
+						<img src="images/[data_s:banner_add]" width="472" height="120" alt="[data_s:page_title]" />
+					</a>
+				</p>
+			[end_for_audition]
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				<a href="http://beyata.minibird.jp/contact/">contact us</a>
+				<a href="http://beyata.minibird.jp/">UNDEFIND TOP</a>
+			</p>
+			<address>
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

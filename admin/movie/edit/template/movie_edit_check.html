@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" href="../../common/css/main.css" type="text/css" media="all" />
+<title>管理画面:アーティスト動画編集</title>
+</head>
+<body>
+	<div class="mainContainer">
+		<div class="headContainer">
+			<div class="headWrap">
+				<h1>UNDEFIND</h1>
+				<p>
+					<a href="http://beyata.minibird.jp/">サイトを確認</a>　|　
+					<a href="../../?out=2NbLQLLmZiwWTMtbRttR">ログアウト</a>
+				</p>
+			</div>
+		</div>
+		<div class="naviContainer">
+			<ul>
+				<li><a href="../../user">ユーザ</a></li>
+				<li><a href="../../artist">アーティスト</a></li>
+				<li><a href="../../audition">オーディション</a></li>
+				<li><a href="../../news">ニュース</a></li>
+				<li><a href="../../movie">動画管理</a></li>
+				<li><a href="../../sound">音楽管理</a></li>
+			</ul>
+		</div>
+		<div class="contentContainer">
+			<div class="titleBox">
+				<h2>動画管理画面</h2>
+			</div>
+			<div class="oneColumnsBox">
+			<h3>アーティスト動画編集</h3>
+				[data_s:err_det]
+				<table class="nomalTableDeco">
+				<tr>
+				<td>動画タイトル</td>
+				<td class="white">[data_s:movie_title]</td>
+				</tr>
+				<tr>
+				<td>動画元のサイト</td>
+				<td class="white">
+				[data_s:site]
+				</td>
+				</tr>
+				<tr>
+				<td>動画のURL</td>
+				<td class="white">
+				[data_s:movie_url]
+				</td>
+				</tr>
+				<tr>
+				<td>表示される動画</td>
+				<td class="white">
+				[data_s:movie_detail]
+				</td>
+				</tr>
+				<tr>
+				<td>登録日時</td>
+				<td class="white">[data_s:reg_date]</td>
+				</tr>
+				<tr>
+				<td>更新日時</td>
+				<td class="white">[data_s:renew_date]</td>
+				</tr>
+				<tr>
+				<td colspan="2" class="white nomalTableCenter">
+				<form action="" method="post">
+				[data_s:comp_check]
+				<input type="submit" name="movie_edit_return" value="動画内容を再度編集する" class="formBtn" />
+				[data_s:comp_btn]
+				</form>
+				</td>
+				</tr>
+				</table>
+			</div>
+		</div>
+		<div class="footContainer">
+			<address id="copyright">
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

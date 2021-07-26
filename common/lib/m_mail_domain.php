@@ -1,0 +1,24 @@
+<?
+//携帯メールドメイン
+$m_domain=array(
+				"docomo.ne.jp",
+				"docomo-camera.ne.jp",
+				"mopera.net",
+				"dwmail.jp",
+				"ezweb.ne.jp",
+				"biz.ezweb.ne.jp",
+				"ido.ne.jp",
+				"softbank.ne.jp",
+				"i.softbank.jp",
+				"d.vodafone.ne.jp",
+				"h.vodafone.ne.jp",
+				"t.vodafone.ne.jp",
+				"c.vodafone.ne.jp",
+				"r.vodafone.ne.jp",
+				"k.vodafone.ne.jp",
+				"n.vodafone.ne.jp",
+				"s.vodafone.ne.jp",
+				"q.vodafone.ne.jp",
+				"disney.ne.jp"
+);
+?>

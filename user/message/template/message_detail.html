@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Language" content="ja" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	
+	<meta name="Author" content="" />
+	<meta name="copyright" content="" />
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+	
+	<link rel="start" href="http://beyata.minibird.jp" />
+	<link rel="stylesheet" href="../../common/css/default.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../../common/css/common.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/message.css" type="text/css" media="all" />
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../../common/js/jquery.laquu.custom-872b0.js"></script>
+	<script type="text/javascript" src="../../common/js/jquery.easing.1.3.js"></script>
+	
+	<title>[data_s:artist_name]さんからのメッセージ</title>
+	
+	<script type="text/javascript">
+		jQuery(function(){
+		 laquu(".nomalTable tr").over();
+		});
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="header_box">
+			<h1>
+				<a href="http://beyata.minibird.jp/">
+					<img src="../../common/images/logo.gif" width="115" height="20" alt="UnDeFiNd" />
+				</a>
+			</h1>
+			<div class="search_box">
+				<form action="../../search/" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="search" />
+					<input type="text" name="search_text" value="アーティスト名を検索" class="text" />
+					<input type="submit" class="search_btn" />
+				</form>
+			</div>
+			<div class="header_navi">
+				<ul id="dropmenu" class="dropmenu">
+					<li><a href="../../artist_list/">ZIPPO一覧▼</a>
+						<ul>
+							<li><a href="../../audition/">オーディション</a></li>
+							<li><a href="../../logout/">ログアウト</a></li>
+						</ul>
+					</li>
+					<li><a href="../../user/profile/">アカウント設定▼</a>
+						<ul>
+							<li><a href="../profile/">アカウント情報</a></li>
+							<li><a href="../password/">パスワード</a></li>
+							<li><a href="../upload/">写真</a></li>
+						</ul>
+					</li>
+					<li><a href="../../user/">[data_s:user_name]</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="left_content">
+			<p class="user_thum">
+				<img src="[data_s:user_thum]" alt="[data_s:user_name]さんのｲﾒｰｼﾞ画像" width="100" height="100" />
+			</p>
+			<dl>
+				<dt>マイページ</dt>
+				<dd class="n_1">
+					<a href="../">
+						マイページ
+					</a>
+				</dd>
+				<dd class="n_2">
+					<a href="../profile/">
+						アカウント情報
+					</a>
+				</dd>
+				<dd class="n_4">
+					<a href="../password/">
+						パスワード
+					</a>
+				</dd>
+				<dd class="n_3">
+					<a href="../upload/">
+						写真
+					</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>コンテンツ</dt>
+				<dd class="n_1">
+					<a href="../../audition/">
+						オーディション
+					</a>
+				</dd>
+				<dd class="n_2">
+					<a href="../../artist_list/">
+						ZIPPO一覧
+					</a>
+				</dd>
+			</dl>
+		</div>
+		<div class="right_content">
+			<div class="content_one_content">
+				<div class="message">
+					<h3 class="title">[data_s:artist_name]さんからのメッセージ</h3>
+					<dl>
+						<dt><img src="[data_s:artist_thum]" alt="[data_s:artist_name]" /></dt>
+						<dd class="title">[data_s:artist_name]さん</dd>
+						<dd class="date">[data_s:reg_date]</dd>
+						<dd class="cmt">[data_s:comment]</dd>
+						<dd class="link"><a href="../../artist/?view=[data_s:ar_id]">[data_s:artist_name]さんのマイページへ</a></dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				<a href="http://beyata.minibird.jp/contact/">contact us</a>
+				<a href="http://beyata.minibird.jp/">UNDEFIND TOP</a>
+			</p>
+			<address>
+				<script type="text/javascript" src="../../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* CSS Document */
+
+/****************************************************
+
+news_list
+
+****************************************************/
+
+div.rightWrap div.rightBox div.textBox
+{
+	overflow:hidden;
+	_zoom:1;
+}
+
+div.rightWrap div.rightBox h4
+{
+	margin-bottom:15px;
+}
+
+div.rightWrap div.rightBox div.textBox p.list
+{
+	margin-bottom:1em;
+	padding-bottom:1em;
+	line-height:1.4em;
+	border-bottom:1px solid #cccccc;
+}
+
+div.rightWrap div.rightBox div.textBox p.list span.p_01
+{
+	font-size:0.9em;
+}
+
+div.rightWrap div.rightBox div.textBox p.list span.p_02
+{
+	font-size:1.2em;
+}
+
+div.rightWrap div.rightBox div.textBox p.list span.p_02 a
+{
+	text-decoration:none;
+	color:#000080;
+}
+
+div.rightWrap div.rightBox div.textBox p.list span.p_02 a:visited
+{
+	text-decoration:none;
+	color:#333333;
+}
+
+div.rightWrap div.rightBox div.textBox p.list span.p_02 a:hover
+{
+	text-decoration:none;
+	color:#ee87a1;
+	text-decoration:underline;
+}
+
+/****************************************************
+
+news_detail
+
+****************************************************/
+
+div.rightWrap div.rightBox div.textBox p.subText
+{
+	font-size:0.9em;
+	margin-bottom:1em;
+}
+
+div.rightWrap div.rightBox div.textBox p.subText span.s_01
+{
+	color:#cc0000;
+	margin-right:10px;
+}
+
+div.rightWrap div.rightBox div.textBox p.titleText
+{
+	font-size:1.5em;
+	margin-bottom:1.5em;
+	font-weight:bold;
+	color:#000080;
+}
+
+div.rightWrap div.rightBox div.textBox p.contentText
+{
+	line-height:1.4;
+	margin-bottom:3em;
+}
+
+div.rightWrap div.rightBox div.textBox p.prev
+{
+	text-align:right;
+}
+
+
+
+
+
+

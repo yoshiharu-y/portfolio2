@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" href="../../common/css/main.css" type="text/css" media="all" />
+<title>管理画面:オーディション編集</title>
+</head>
+<body>
+	<div class="mainContainer">
+		<div class="headContainer">
+			<div class="headWrap">
+				<h1>UNDEFIND</h1>
+				<p>
+					<a href="http://beyata.minibird.jp/">サイトを確認</a>　|　
+					<a href="../../?out=2NbLQLLmZiwWTMtbRttR">ログアウト</a>
+				</p>
+			</div>
+		</div>
+		<div class="naviContainer">
+			<ul>
+				<li><a href="../../user">ユーザ</a></li>
+				<li><a href="../../artist">アーティスト</a></li>
+				<li><a href="../../audition">オーディション</a></li>
+				<li><a href="../../news">ニュース</a></li>
+				<li><a href="../../movie">動画管理</a></li>
+				<li><a href="../../sound">音楽管理</a></li>
+			</ul>
+		</div>
+		<div class="contentContainer">
+			<div class="titleBox">
+				<h2>オーディション管理画面</h2>
+			</div>
+			<div class="oneColumnsBox">
+			<h3>オーディション編集</h3>
+			[data_s:err_det]
+				<table class="nomalTableDeco">
+				<tr>
+				<td colspan="2">オーディションバナー画像</td>
+				</tr>
+				<tr>
+				<td colspan="2" class="white nomalTableCenter">
+				[data_s:banner_add]
+				</td>
+				</tr>
+				<tr>
+				<td>オーディションページブラウザタイトル</td>
+				<td class="white">
+				[data_s:page_title]</td>
+				</tr>
+				<tr>
+				<td>オーディションページサイト内タイトル</td>
+				<td class="white">
+				[data_s:name]
+				</td>
+				</tr>
+				<tr>
+				<td>説明文</td>
+				<td class="white">
+				[data_s:head]
+				</td>
+				</tr>
+				<tr>
+				<td>募集内容</td>
+				<td class="white">
+				[data_s:detail]
+				</td>
+				</tr>
+				<tr>
+				<td>応募資格</td>
+				<td class="white">
+				[data_s:qualification]
+				</td>
+				</tr>
+				<tr>
+				<td>応募方法</td>
+				<td class="white">
+				[data_s:contact_url]
+				</td>
+				</tr>
+				<tr>
+				<td>募集開始日付</td>
+				<td class="white">
+				[data_s:entry_start_year]年
+				[data_s:entry_start_month]月
+				[data_s:entry_start_day]日
+				&nbsp;
+				[data_s:entry_start_hour]時
+				[data_s:entry_start_mins]分
+				</td>
+				</tr>
+				<tr>
+				<td>募集終了日付</td>
+				<td class="white">
+				[data_s:entry_end_year]年
+				[data_s:entry_end_month]月
+				[data_s:entry_end_day]日
+				&nbsp;
+				[data_s:entry_end_hour]時
+				[data_s:entry_end_mins]分
+				</td>
+				</tr>
+				<tr>
+				<td>開始日付</td>
+				<td class="white">
+				[data_s:start_year]年
+				[data_s:start_month]月
+				[data_s:start_day]日
+				&nbsp;
+				[data_s:start_hour]時
+				[data_s:start_mins]分
+				</td>
+				</tr>
+				<tr>
+				<td>終了日付</td>
+				<td class="white">
+				[data_s:end_year]年
+				[data_s:end_month]月
+				[data_s:end_day]日
+				&nbsp;
+				[data_s:end_hour]時
+				[data_s:end_mins]分
+				</td>
+				</tr>
+				<tr>
+				<td>合格後の待遇</td>
+				<td class="white">
+				[data_s:audition_treatment]
+				</td>
+				</tr>
+				<tr>
+				<td>オーディション詳細での表示方法</td>
+				<td class="white">
+				[data_s:view]
+				</td>
+				</tr>
+				<tr>
+				<td>登録日時</td>
+				<td class="white">[data_s:reg_date]</td>
+				</tr>
+				<tr>
+				<td>更新日時</td>
+				<td class="white">[data_s:renew_date]</td>
+				</tr>
+				<tr>
+				<td colspan="2" class="white nomalTableCenter">
+				<form action="" method="post">
+				[data_s:comp_check]
+				<input type="submit" name="audition_edit_return" value="オーディションを再度編集する" class="formBtn" />
+				[data_s:comp_btn]
+				</form>
+				</td>
+				</tr>
+				</table>
+			</div>
+		</div>
+		<div class="footContainer">
+			<address id="copyright">
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

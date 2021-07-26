@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" href="../../common/css/main.css" type="text/css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="../../common/js/jquery.upload.js"></script>
+<script type="text/javascript" src="../upload/js/audition_up.js"></script>
+<title>管理画面:オーディション編集</title>
+</head>
+<body>
+	<div class="mainContainer">
+		<div class="headContainer">
+			<div class="headWrap">
+				<h1>UNDEFIND</h1>
+				<p>
+					<a href="http://beyata.minibird.jp/">サイトを確認</a>　|　
+					<a href="../../?out=2NbLQLLmZiwWTMtbRttR">ログアウト</a>
+				</p>
+			</div>
+		</div>
+		<div class="naviContainer">
+			<ul>
+				<li><a href="../../user">ユーザ</a></li>
+				<li><a href="../../artist">アーティスト</a></li>
+				<li><a href="../../audition">オーディション</a></li>
+				<li><a href="../../news">ニュース</a></li>
+				<li><a href="../../movie">動画管理</a></li>
+				<li><a href="../../sound">音楽管理</a></li>
+			</ul>
+		</div>
+		<div class="contentContainer">
+			<div class="titleBox">
+				<h2>オーディション管理画面</h2>
+			</div>
+			<div class="oneColumnsBox">
+			<h3>オーディション編集</h3>
+			[data_s:err_det]
+			<p>オーディション情報を編集します。</p>
+			<form action="" method="post" enctype="multipart/form-data">
+			<!--↓改行コードを判断するので決してescape_textにかかってる改行はなくしてはいけない↓-->
+			<textarea name="escape_text" style="display:none;">
+			</textarea>
+			<!--↑改行コードを判断するので決してescape_textにかかってる改行はなくしてはいけない↑-->
+			<input type="hidden" name="audition_no" value="[data_s:aud_seq_num]" />
+				<table class="nomalTableDeco">
+				<tr>
+				<td colspan="2">オーディションバナー画像</td>
+				</tr>
+				<tr>
+				<td colspan="2" class="white nomalTableCenter">
+				<input type="hidden" name="banner_add" value="[data_s:banner_add]" />
+	 			<input type="file" name="up_new" id="up_new" />
+				[data_s:audition_banner_add]
+				</td>
+				</tr>
+				<tr>
+				<td>オーディションページブラウザタイトル</td>
+				<td class="white">
+				<input type="text" name="page_title" value="[data_s:page_title]" size="50" /></td>
+				</tr>
+				<tr>
+				<td>オーディションページサイト内タイトル</td>
+				<td class="white">
+				<input type="text" name="name" value="[data_s:name]" size="50" />
+				</td>
+				</tr>
+				<tr>
+				<td>説明文</td>
+				<td class="white">
+				<textarea cols="65" rows="6" name="head">[data_s:head]</textarea>
+				</td>
+				</tr>
+				<tr>
+				<td>募集内容</td>
+				<td class="white">
+				<textarea cols="65" rows="14" name="detail">[data_s:detail]</textarea>
+				</td>
+				</tr>
+				<tr>
+				<td>応募資格</td>
+				<td class="white">
+				<textarea cols="65" rows="6" name="qualification">[data_s:qualification]</textarea>
+				</td>
+				</tr>
+				<tr>
+				<td>応募方法</td>
+				<td class="white">
+				<p class="red">リンクさせたい箇所はlink:[URL][文章]としてください。</p>
+				<textarea cols="65" rows="14" name="contact_url">[data_s:contact_url]</textarea>
+				</td>
+				</tr>
+				<tr>
+				<td>募集開始日付</td>
+				<td class="white">
+				<select name="entry_start_year">[data_s:entry_start_year_form]</select>年
+				<select name="entry_start_month">[data_s:entry_start_month_form]</select>月
+				<select name="entry_start_day">[data_s:entry_start_day_form]</select>日
+				&nbsp;
+				<select name="entry_start_hour">[data_s:entry_start_hour_form]</select>時
+				<select name="entry_start_mins">[data_s:entry_start_mins_form]</select>分
+				</td>
+				</tr>
+				<tr>
+				<td>募集終了日付</td>
+				<td class="white">
+				<select name="entry_end_year">[data_s:entry_end_year_form]</select>年
+				<select name="entry_end_month">[data_s:entry_end_month_form]</select>月
+				<select name="entry_end_day">[data_s:entry_end_day_form]</select>日
+				&nbsp;
+				<select name="entry_end_hour">[data_s:entry_end_hour_form]</select>時
+				<select name="entry_end_mins">[data_s:entry_end_mins_form]</select>分
+				</td>
+				</tr>
+				<tr>
+				<td>開始日付</td>
+				<td class="white">
+				<select name="start_year">[data_s:start_year_form]</select>年
+				<select name="start_month">[data_s:start_month_form]</select>月
+				<select name="start_day">[data_s:start_day_form]</select>日
+				&nbsp;
+				<select name="start_hour">[data_s:start_hour_form]</select>時
+				<select name="start_mins">[data_s:start_mins_form]</select>分
+				</td>
+				</tr>
+				<tr>
+				<td>終了日付</td>
+				<td class="white">
+				<select name="end_year">[data_s:end_year_form]</select>年
+				<select name="end_month">[data_s:end_month_form]</select>月
+				<select name="end_day">[data_s:end_day_form]</select>日
+				&nbsp;
+				<select name="end_hour">[data_s:end_hour_form]</select>時
+				<select name="end_mins">[data_s:end_mins_form]</select>分
+				</td>
+				</tr>
+				<tr>
+				<td>合格後の待遇</td>
+				<td class="white">
+				<textarea cols="65" rows="10" name="audition_treatment">[data_s:audition_treatment]</textarea>
+				</td>
+				</tr>
+				<tr>
+				<td>オーディション詳細での表示方法</td>
+				<td class="white">
+				<input type="checkbox" name="aud_view" id="view" value="[data_s:aud_view]" />&nbsp;<label for="view" style="vertical-align:top">詳細のみの表示</label>
+				</td>
+				</tr>
+				<tr>
+				<td>登録日時</td>
+				<td class="white">[data_s:reg_date]</td>
+				</tr>
+				<tr>
+				<td>更新日時</td>
+				<td class="white">[data_s:renew_date]</td>
+				</tr>
+				<tr>
+				<td colspan="2" class="white nomalTableCenter">
+				<input type="submit" name="audition_edit_check" value="編集確認" class="formBtn" />
+				</td>
+				</tr>
+				</table>
+				</form>
+			</div>
+		</div>
+		<div class="footContainer">
+			<address id="copyright">
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

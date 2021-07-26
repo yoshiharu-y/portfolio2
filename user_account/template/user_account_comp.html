@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Language" content="ja" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	
+	<meta name="Author" content="" />
+	<meta name="copyright" content="" />
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+	
+	<link rel="start" href="http://beyata.minibird.jp" />
+	<link rel="stylesheet" href="../common/css/default.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../common/css/common.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/user_account_conf.css" type="text/css" media="all" />
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../common/js/jquery.laquu.custom-872b0.js"></script>
+	<script type="text/javascript" src="../common/js/jquery.easing.1.3.js"></script>
+	
+	<title>UNDEFINDユーザー登録</title>
+	
+	<script type="text/javascript">
+		jQuery(function(){
+		 laquu(".nomalTable tr").over();
+		});
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="header_box">
+			<h1>
+				<a href="http://beyata.minibird.jp/">
+					<img src="../common/images/logo.gif" width="115" height="20" alt="UnDeFiNd" />
+				</a>
+			</h1>
+		</div>
+	</div>
+	<div class="content">
+		<div class="registBox">
+			<div class="title">
+				<h3>UNDEFINDユーザー登録</h3>
+				<p>送信後、入力したメールアドレス宛にメールがいきます。そこから登録を完了してください。<br /><span>(登録長いけど全部必須です)</span></p>
+			</div>
+		</div>
+		<div class="regist">
+			<div class="coutionBox">[data_s:mail_state]</div>
+			<dl>
+				<dt>ログインID</dt>
+				<dd>
+					：[data_s:login_id]
+				</dd>
+				<dt>パスワード</dt>
+				<dd>
+					：[data_s:password]
+				</dd>
+				<dt>ニックネーム</dt>
+				<dd>
+					：[data_s:user_name]
+				</dd>
+				<dt>お名前</dt>
+				<dd>
+					：[data_s:name]
+				</dd>
+				<dt>お名前（カナ）</dt>
+				<dd>
+					：[data_s:kana]
+				</dd>
+				<dt>誕生日</dt>
+				<dd>
+					：[data_s:year]年[data_s:month]月[data_s:day]日
+				</dd>
+				<dt>性別</dt>
+				<dd class="radio">
+					：[data_s:sex_type]
+				</dd>
+				<dt>メールアドレス</dt>
+				<dd>
+					：[data_s:mail]
+				</dd>
+				<dt>郵便番号</dt>
+				<dd>
+					：[data_s:zip]
+				</dd>
+				<dt>都道府県</dt>
+				<dd>
+					：[data_s:address1]
+				</dd>
+				<dt>市区町村</dt>
+				<dd>
+					：[data_s:address2-1]
+				</dd>
+				<dt>住所</dt>
+				<dd>
+					：[data_s:address2-2]
+				</dd>
+				<dd>
+					<span class="text2">
+						<a href="http://beyata.minibird.jp/">トップページへ</a>
+					</span>
+				</dd>
+			</dl>
+		</div>
+		<div class="footer">
+			<address>
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,160 @@
+/* CSS Document */
+
+/****************************************************
+
+account_edit用CSS
+
+****************************************************/
+
+
+div.content_one_content
+{
+	padding:20px;
+}
+
+
+/****************************************************
+
+account_edit
+
+****************************************************/
+
+.account
+{
+}
+
+.account h3
+{
+	color:#1c2a47;
+	font-size:1.1em;
+	font-weight:bold;
+	margin-bottom:1em;
+}
+
+.account table
+{
+	border-top:1px solid #aaaaaa;
+	width:100%;
+	font-size:75%;
+	margin-bottom:15px;
+}
+
+.account table th,
+.account table td
+{
+	border-bottom:1px solid #e9e9e9;
+	padding:10px;
+}
+
+.account table th.last,
+.account table td.last
+{
+	border-bottom:1px solid #aaaaaa;
+}
+
+.hover {
+    background: #f7f7f7;
+}
+
+.account table th
+{
+	color:#333333;
+	font-weight:bold;
+	width:120px;
+	text-align:right;
+}
+
+.account table td
+{
+	color:#808080;
+}
+
+.account table td input
+{
+	color:#808080;
+}
+
+.account table td select
+{
+	color:#808080;
+}
+
+.inputBtn .submit
+{
+    display:block;
+    width:62px;
+    height:25px;
+    padding:0;
+    border:0;
+    background:url(../../../common/images/conf_btn.gif) no-repeat left top;
+    text-indent:-9898px;
+    font-size: 0px;
+    line-height: 0px;
+    cursor:pointer;
+}
+
+.inputBtn .submit:hover,
+.inputBtn .submit:focus {
+    background-position:left -25px;
+}
+
+.inputBtn .prev_submit
+{
+    display:block;
+    width:62px;
+    height:25px;
+    padding:0;
+    border:0;
+    background:url(../../../common/images/prev_btn.gif) no-repeat left top;
+    text-indent:-9898px;
+    font-size: 0px;
+    line-height: 0px;
+    cursor:pointer;
+	float:left;
+}
+
+.inputBtn .prev_submit:hover,
+.inputBtn .prev_submit:focus {
+    background-position:left -25px;
+}
+
+.inputBtn .send_submit
+{
+    display:block;
+    width:85px;
+    height:25px;
+    padding:0;
+    border:0;
+    background:url(../../../common/images/send_btn.gif) no-repeat left top;
+    text-indent:-9898px;
+    font-size: 0px;
+    line-height: 0px;
+    cursor:pointer;
+	float:left;
+	margin-left:15px;
+}
+
+.inputBtn .send_submit:hover,
+.inputBtn .send_submit:focus {
+    background-position:left -25px;
+}
+
+#send
+{
+	margin-bottom:10px;
+}
+
+.label
+{
+	font-size:80%;
+}
+
+.coutionBox
+{
+	border:1px solid #dd3c10;
+	background:#ffebe8;
+	padding:1em;
+	font-size:0.75em;
+	margin-bottom:20px;
+	line-height:1.5em;
+}

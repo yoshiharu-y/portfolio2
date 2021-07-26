@@ -1,0 +1,75 @@
+/* CSS Document */
+
+
+/****************************************************
+
+common
+
+****************************************************/
+
+
+div.ColmunsWrap
+{
+	margin:0 auto;
+	padding:20px 0;
+	width:800px;
+}
+
+div.ColmunsWrap div.ColmunsTitle
+{
+	border-bottom:1px dotted #c2c0c1;
+	margin-bottom:10px;
+	padding-bottom:20px;
+}
+
+div.ColmunsWrap div.ColmunsTitle h3
+{
+	padding:2px 0 2px 10px;
+	border-left:3px solid #ee87a1;
+	font-size:1.3em;
+}
+
+/****************************************************
+
+upload
+
+****************************************************/
+
+.upload h3
+{
+	color:#1c2a47;
+	font-size:1.1em;
+	font-weight:bold;
+	margin-bottom:1em;
+}
+
+
+div.imagesWrap
+{
+	overflow:hidden;
+	_zoom:1;
+	margin-bottom:50px;
+	padding:10px;
+	background:#efefef;
+}
+
+div.imagesWrap div
+{
+	float:left;
+	text-align:center;
+	margin-bottom:20px;
+}
+
+div.imagesWrap div p
+{
+	margin-top:10px;
+}
+
+div.btnWrap
+{
+}
+
+div.btnWrap p
+{
+	margin-bottom:10px;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Language" content="ja" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	
+	<meta name="Author" content="" />
+	<meta name="copyright" content="" />
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+	
+	<link rel="start" href="http://beyata.minibird.jp" />
+	<link rel="stylesheet" href="../../common/css/default.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../../common/css/common.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/movie.css" type="text/css" media="all" />
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../../common/js/jquery.laquu.custom-872b0.js"></script>
+	<script type="text/javascript" src="../../common/js/jquery.easing.1.3.js"></script>
+	
+	<title>ムービー編集</title>
+	
+	<script type="text/javascript">
+		jQuery(function(){
+		 laquu(".nomalTable tr").over();
+		});
+	</script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="header_box">
+			<h1>
+				<a href="http://beyata.minibird.jp/">
+					<img src="../../common/images/logo.gif" width="115" height="20" alt="UnDeFiNd" />
+				</a>
+			</h1>
+			<div class="search_box">
+				<form action="../../search/" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="search" />
+					<input type="text" name="search_text" value="アーティスト名を検索" class="text" />
+					<input type="submit" class="search_btn" />
+				</form>
+			</div>
+			<div class="header_navi">
+				<p>
+					<span>[data_s:artist_name]</span>
+					<span><a href="">アカウント設定 ▼</a></span>
+					<span><a href="">その他 ▼</a></span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="left_content">
+			<p class="user_thum">
+				<img src="[data_s:artist_thum]" width="100" height="100" />
+			</p>
+			<dl>
+				<dt>マイページ</dt>
+				<dd class="n_1">
+					<a href="../account/">
+						名前
+					</a>
+				</dd>
+				<dd class="n_2">
+					<a href="../password/">
+						パスワード
+					</a>
+				</dd>
+				<dd class="n_3">
+					<a href="../upload/">
+						画像
+					</a>
+				</dd>
+				<dd class="n_4">
+					<a href="../news/">
+						ニュース
+					</a>
+				</dd>
+				<dd class="n_4">
+					<a href="../profile/">
+						プロフィール
+					</a>
+				</dd>
+				<dd class="n_1">
+					<a href="../movie/">
+						動画
+					</a>
+				</dd>
+				<dd class="n_2">
+					<a href="../sound/">
+						ミュージック
+					</a>
+				</dd>
+			</dl>
+			<dl>
+				<dt>コンテンツ</dt>
+				<dd class="n_1">
+					<a href="../">
+						マイページへ
+					</a>
+				</dd>
+			</dl>
+		</div>
+		<div class="right_content">
+			<div class="content_one_content">
+				<div class="movie">
+					<h3 class="title">ムービー編集</h3>
+					<p class="desc">
+						現在以下の３種類のサイトに対応しています。<br />
+						URIはお間違えないようお願いします。登録できるのは1個までです。
+					</p>
+					<form action="" method="post" enctype="multipart/form-data">
+						<table border="0" cellpadding="0" cellspacing="0" class="nomalTable">
+							<tr>
+								<th class="subject">動画タイトル</th>
+								<td><input type="text" name="movie_title" value="[data_s:movie_title]" size="50" /></td>
+							</tr>
+							<tr>
+								<th class="subject">動画元のサイト</th>
+								<td>
+									<select name="movie_site">
+										[data_s:site_form]
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th class="subject last">動画のURL</th>
+								<td class="last">
+									<div class="discription">
+										<p class="title">＜ニコニコ動画のURL例＞</p>
+										<p class="sub">
+											http://www.nicovideo.jp/watch/sm数字<br />
+											http://www.nicovideo.jp/watch/nm数字<br />
+											http://ext.nicovideo.jp/thumb_watch/sm数字
+										</p>
+										<p class="title">＜USTREAMのURL例＞</p>
+										<p class="sub">
+											http://www.ustream.tv/embed/数字<br />
+											http://www.ustream.tv/embed/recorded/数字/highlight/数字<br />
+											http://www.ustream.tv/recorded/数字
+										</p>
+										<p class="title">＜YouTubeのURL例＞</p>
+										<p class="sub">
+											http://www.youtube.com/watch?v=数字<br />
+											http://www.youtube.com/watch?v=数字&amp;feature=related
+										</p>
+										<p class="sub coution">
+											※ニコニコ動画のURLは『sm』の部分が『nm』のURLも使用できます。<br />
+											※USTREAMのURLは動画ページ内の『埋め込み』の項目を選択、埋め込みコード内の『src="******"』のURLをコピーしてください。
+										</p>
+									</div>
+									<p><input type="text" name="movie_url" value="[data_s:movie_url]" size="80" /></p>
+								</td>
+							</tr>
+						</table>
+						<div class="inputBtn">
+							<input type="submit" name="movie_edit_check" value="確認画面へ移動する" class="submit" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<address>
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" href="../../common/css/main.css" type="text/css" media="all" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="../../common/js/jquery.upload.js"></script>
+<script type="text/javascript" src="../../Copy of create/upload/js/audition_up.js"></script>
+<title>管理画面:新規音楽投稿</title>
+</head>
+<body>
+	<div class="mainContainer">
+		<div class="headContainer">
+			<div class="headWrap">
+				<h1>UNDEFIND</h1>
+				<p>
+					<a href="http://beyata.minibird.jp/">サイトを確認</a>　|　
+					<a href="../../?out=2NbLQLLmZiwWTMtbRttR">ログアウト</a>
+				</p>
+			</div>
+		</div>
+		<div class="naviContainer">
+			<ul>
+				<li><a href="../../user">ユーザ</a></li>
+				<li><a href="../../artist">アーティスト</a></li>
+				<li><a href="../../audition">オーディション</a></li>
+				<li><a href="../../news">ニュース</a></li>
+				<li><a href="../../movie">動画管理</a></li>
+				<li><a href="../../sound">音楽管理</a></li>
+			</ul>
+		</div>
+		<div class="contentContainer">
+			<div class="titleBox">
+				<h2>音楽管理画面</h2>
+			</div>
+			<div class="oneColumnsBox">
+			<h3>新規音楽投稿</h3>
+			[data_s:err_det]
+			<p>音源ファイルの容量は6MB以下です。</p>
+			<form action="" method="post" enctype="multipart/form-data">
+				<table class="nomalTableDeco">
+				<tr>
+				<td>音楽タイトル</td>
+				<td class="white"><input type="text" name="sound_title" value="[data_s:sound_title]" size="50" /></td>
+				</tr>
+				<tr>
+				<td>音楽ファイル</td>
+				<td class="white">
+				<input type="file" name="up_sound" />
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2" class="white nomalTableCenter">
+				<p><input type="checkbox" id="send" name="comp_check" value="check" />
+		  <label for="send">音楽を投稿する場合、チェックを入れてください。</label></p>
+				<p><input type="hidden" name="ar_id" value="[data_s:ar_id]" />
+				<input type="submit" name="sound_create_comp" value="音楽を投稿する" class="formBtn" /></p>
+				</td>
+				</tr>
+				</table>
+				</form>
+			</div>
+		</div>
+		<div class="footContainer">
+			<address id="copyright">
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

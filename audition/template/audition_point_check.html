@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Language" content="ja" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	
+	<meta name="Author" content="" />
+	<meta name="copyright" content="" />
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+	
+	
+	
+	<link rel="stylesheet" href="../common/css/default.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../common/css/common.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/audition_detail.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/vote.css" type="text/css" media="all" />
+	
+	<script type="text/javascript" src="../common/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../common/js/jquery.corner.js"></script>
+	
+	<script type="text/javascript">
+		$('.top').corner("top 7px");
+		$('.bottom').corner("bottom 7px");
+		$('.wrap').corner("bottom 7px");
+	</script>
+	
+	<title>投票</title>
+</head>
+<body>
+	<div class="header">
+		<div class="header_box">
+			<h1>
+				<a href="http://beyata.minibird.jp/">
+					<img src="../common/images/logo.gif" width="115" height="20" alt="UnDeFiNd" />
+				</a>
+			</h1>
+			<div class="search_box">
+				<form action="../search/" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="search" />
+					<input type="text" name="search_text" value="アーティスト名を検索" class="text" />
+					<input type="submit" class="search_btn" />
+				</form>
+			</div>
+			<div class="header_navi">
+				<ul id="dropmenu" class="dropmenu">
+					<li><a href="../artist_list/">ZIPPO一覧▼</a>
+						<ul>
+							<li><a href="../audition/">オーディション</a></li>
+							<li><a href="../logout/">ログアウト</a></li>
+						</ul>
+					</li>
+					<li><a href="../user/profile/">アカウント設定▼</a>
+						<ul>
+							<li><a href="../user/profile/">アカウント情報</a></li>
+							<li><a href="../user/password/">パスワード</a></li>
+							<li><a href="../user/upload/">写真</a></li>
+						</ul>
+					</li>
+					<li><a href="../user/">[data_s:user_name]</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="ContentWrap_audition">
+			<div class="rightWrap">
+				<div class="ColmunsWrap">
+					<div class="ColmunsTitle top">
+						<h3>投票</h3>
+					</div>
+					<div class="ColmunsBox wrap">
+						<div class="textBox bottom">
+							<p>[data_s:check_txt]</p>
+							<div class="voteWrap">
+								<div class="left">
+									<p><img src="[data_s:artist_thum]" alt="[data_s:artist_name]ｲﾒｰｼﾞ画像" /></p>
+								</div>
+								<form action="" method="post" enctype="multipart/form-data">
+									<table class="right" cellpadding="0" cellspacing="0" border="0">
+										<tr>
+											<td colspan="2" class="odd"><p class="name"><a href="../artist/?view=[data_s:ar_id]">[data_s:artist_name]</a></p></td>
+										</tr>
+										<tr>
+											<td class="left even">投票ポイント</td>
+											<td class="right even"><p class="point_a">[data_s:ar_point]</p></td>
+										</tr>
+										<tr>
+											<td class="left odd">ポイント残高</td>
+											<td class="right odd"><p class="point_u">[data_s:user_point]</p></td>
+										</tr>
+										<tr>
+											<td class="left even">投票するポイント</td>
+											<td class="right even">[data_s:form_select][data_s:user_vote_point]</td>
+										</tr>
+									</table>
+									<div class="inputBtn">
+										<p class="btn">[data_s:form_txt]</p>
+									</div>
+								</form>
+							</div>
+							<p class="prev"><a href="./?view=[data_s:aud_seq_num]">オーディション詳細に戻る</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				<a href="http://beyata.minibird.jp/contact/">contact us</a>
+				<a href="http://beyata.minibird.jp/">UNDEFIND TOP</a>
+			</p>
+			<address>
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

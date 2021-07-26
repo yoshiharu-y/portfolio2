@@ -1,0 +1,75 @@
+/* CSS Document */
+
+/****************************************************
+
+message_detail
+
+****************************************************/
+
+
+.message h3
+{
+	color:#1c2a47;
+	font-size:1.1em;
+	margin-bottom:1em;
+	font-weight:bold;
+}
+
+.message dl
+{
+	border-bottom:1px solid #aaaaaa;
+	border-top:1px solid #aaaaaa;
+	overflow:hidden;
+	_zoom:1;
+	padding:10px;
+}
+
+
+.message dl dt
+{
+	clear: left;
+	float: left;
+	font-size:75%;
+	font-weight:bold;
+	color:#666666;
+	width: 380px;
+}
+
+.message dl dd
+{
+	margin-left: 380px;
+	font-size:75%;
+	color:#808080;
+}
+
+.message dl dd.title
+{
+	margin-bottom: 1.5em;
+	font-size:75%;
+	font-weight:bold;
+	color:#333333;
+}
+
+.message dl dd.date
+{
+	margin-bottom: 3em;
+}
+
+.message dl dd.cmt
+{
+	margin-bottom: 3em;
+	color:#333333;
+	font-size:80%;
+	line-height:1.5em;
+}
+
+.message dl dd.link a
+{
+	text-decoration:none;
+	color:#3b5998;
+}
+
+.message dl dd.link a:hover
+{
+	text-decoration:underline;
+}

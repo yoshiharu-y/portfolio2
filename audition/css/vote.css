@@ -1,0 +1,178 @@
+/* CSS Document */
+
+
+/****************************************************
+
+投票機能に対するCSS
+audition_point_check.php
+audition_point_comp.php
+
+****************************************************/
+
+
+div.ColmunsWrap
+{
+	margin:0 auto;
+	padding:20px 0;
+	width:800px;
+}
+
+div.ColmunsWrap div.ColmunsTitle
+{
+	border-bottom:1px dotted #c2c0c1;
+	margin-bottom:10px;
+	padding-bottom:20px;
+}
+
+div.ColmunsWrap div.ColmunsTitle h3
+{
+	padding:2px 0 2px 10px;
+	border-left:3px solid #ee87a1;
+	font-size:1.3em;
+}
+
+div.ColmunsWrap div.textBox
+{
+	width:100%;
+	margin-bottom:10px;
+}
+
+div.ColmunsWrap div.textBox div.voteWrap
+{
+	overflow:hidden;
+	_zoom:1;
+	padding:10px 0;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+div.ColmunsWrap div.textBox div.left
+{
+	float:left;
+	width:400px;
+}
+
+div.ColmunsWrap div.textBox div.left p
+{
+	text-align:center;
+}
+
+div.ColmunsWrap div.textBox table.right
+{
+	float:right;
+	width:400px;
+	margin-bottom:2em;
+	border-top:1px dotted #848484;
+}
+
+div.ColmunsWrap div.textBox table.right tr td
+{
+	padding:10px 5px;
+	border-bottom:1px dotted #848484;
+}
+
+div.ColmunsWrap div.textBox table.right tr td.left
+{
+	width:100px;
+}
+
+div.ColmunsWrap div.textBox table.right tr td.odd
+{
+	background:#ffffff;
+}
+
+div.ColmunsWrap div.textBox table.right tr td.even
+{
+	background:#efefef;
+}
+
+
+div.ColmunsWrap div.textBox table.right tr td p.name
+{
+	font:1.5em "ＭＳ Ｐゴシック", Osaka;
+	margin-bottom:1em;
+}
+
+div.ColmunsWrap div.textBox table.right tr td p.name a
+{
+	color:#00afec;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+div.ColmunsWrap div.textBox div.inputBtn
+{
+	text-align:left;
+}
+
+div.ColmunsWrap div.textBox p.prev
+{
+	clear:both;
+	text-align:right;
+}
+
+/****************************************************
+
+form_button
+
+****************************************************/
+
+div.ColmunsWrap div.textBox div.inputBtn .submit
+{
+    display:block;
+    width:62px;
+    height:25px;
+    padding:0;
+    border:0;
+    background:url(../../common/images/conf_btn.gif) no-repeat left top;
+    text-indent:-9898px;
+    font-size: 0px;
+    line-height: 0px;
+    cursor:pointer;
+}
+
+div.ColmunsWrap div.textBox div.inputBtn .submit:hover,
+div.ColmunsWrap div.textBox div.inputBtn .submit:focus {
+    background-position:left -25px;
+}
+
+div.ColmunsWrap div.textBox div.inputBtn .cancel_submit
+{
+    display:block;
+    width:62px;
+    height:25px;
+    padding:0;
+    border:0;
+    background:url(../../common/images/prev_btn.gif) no-repeat left top;
+    text-indent:-9898px;
+    font-size: 0px;
+    line-height: 0px;
+    cursor:pointer;
+	float:left;
+}
+
+div.ColmunsWrap div.textBox div.inputBtn .cancel_submit:hover,
+div.ColmunsWrap div.textBox div.inputBtn .cancel_submit:focus {
+    background-position:left -25px;
+}
+
+div.ColmunsWrap div.textBox div.inputBtn .send_submit
+{
+    display:block;
+    width:85px;
+    height:25px;
+    padding:0;
+    border:0;
+    background:url(../../common/images/send_btn.gif) no-repeat left top;
+    text-indent:-9898px;
+    font-size: 0px;
+    line-height: 0px;
+    cursor:pointer;
+	float:left;
+	margin-left:15px;
+}
+
+div.ColmunsWrap div.textBox div.inputBtn .send_submit:hover,
+div.ColmunsWrap div.textBox div.inputBtn .send_submit:focus {
+    background-position:left -25px;
+}

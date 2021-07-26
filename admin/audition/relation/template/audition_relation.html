@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" /> 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="../../common/js/jquery.tablesorter.min.js"></script>
+<link rel="stylesheet" href="../../common/css/main.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../common/theme/style.css" type="text/css" id="" media="print, projection, screen" />
+<title>管理画面:オーディション一覧</title>
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function() { 
+    $("#sort_table").tablesorter();
+});
+</script>
+	<div class="mainContainer">
+		<div class="headContainer">
+			<div class="headWrap">
+				<h1>UNDEFIND</h1>
+				<p>
+					<a href="http://beyata.minibird.jp/">サイトを確認</a>　|　
+					<a href="../../?out=2NbLQLLmZiwWTMtbRttR">ログアウト</a>
+				</p>
+			</div>
+		</div>
+		<div class="naviContainer">
+			<ul>
+				<li><a href="../../user">ユーザ</a></li>
+				<li><a href="../../artist">アーティスト</a></li>
+				<li><a href="../../audition">オーディション</a></li>
+				<li><a href="../../news">ニュース</a></li>
+				<li><a href="../../movie">動画管理</a></li>
+				<li><a href="../../sound">音楽管理</a></li>
+			</ul>
+		</div>
+		<div class="contentContainer">
+			<div class="titleBox">
+				<h2>オーディション管理画面</h2>
+			</div>
+			<div class="oneColumnsBox">
+			<h3>オーディション関連付け</h3>
+			[data_s:err_det]
+			<p>選択されているオーディション</p>
+				<table class="tablesorter">
+				<thead>
+				<tr>
+				<th>イベントナンバー</th>
+				<th>タイトル</th>
+				<th>開催状態</th>
+				<th>開始日時</th>
+				<th>終了日時</th>
+				<th>更新日時</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<td>[data_s:rel_aud_seq_num]</td>
+				<td>[data_s:rel_page_title]</td>
+				<td>[data_s:rel_audition_status]</td>
+				<td>[data_s:rel_start_date]</td>
+				<td>[data_s:rel_end_date]</td>
+				<td>[data_s:rel_renew_date]</td>
+				</tr>
+				</tbody>			
+				</table>
+			<form action="" method="post" enctype="multipart/form-data">
+			<input type="hidden" name="audition_no" value="[data_s:rel_aud_seq_num]" />
+			<table class="nomalTableDeco">
+				<tr>
+				<td>関連付けするオーディション</td>
+				<td class="white">
+				<input type="text" name="aud_rel_num" value="[data_s:aud_rel_num]" size="2" />※イベントナンバーを入力してください。</td>
+				<td rowspan="2" class="white nomalTableCenter">
+				<p><input type="checkbox" id="send" name="rel_check" value="check" />
+      <label for="send">関連付けを完了する場合はチェックを入れてください</label></p>
+				<input type="submit" name="audition_rel_comp" value="関連付けする" class="formBtn" />
+				</td>
+				</tr>
+				<tr>
+				<td>関連元のアーティスト処理</td>
+				<td class="white">
+				<p><input type="checkbox" id="transfer" name="transfer_check" value="check" /><label for="transfer">オーディションに参加させる</label></p>
+				<p><input type="text" name="start_artist_rel" value="[data_s:start_artist_rel]" size="1" />位～<input type="text" name="end_artist_rel" value="[data_s:end_artist_rel]" size="1" />位まで</p>
+	 
+				</td>
+				</tr>
+				</table>
+				</form>
+			
+			
+			
+			<h3>関連付けしているオーディション</h3>
+				<table class="tablesorter" id="sort_table">
+				<thead>
+				<tr>
+				<th>イベントナンバー</th>
+				<th>タイトル</th>
+				<th>開催状態</th>
+				<th>開始日時</th>
+				<th>終了日時</th>
+				<th>更新日時</th>
+				</tr>
+				</thead>
+				<tbody>
+				[for_audition]
+				<tr>
+				<td>[data_s:aud_seq_num]</td>
+				<td>[data_s:page_title]</td>
+				<td>[data_s:audition_status]</td>
+				<td>[data_s:start_date]</td>
+				<td>[data_s:end_date]</td>
+				<td>[data_s:renew_date]</td>
+				</tr>
+				[end_for_audition]
+				</tbody>			
+				</table>
+			</div>
+		</div>
+		<div class="footContainer">
+			<address id="copyright">
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

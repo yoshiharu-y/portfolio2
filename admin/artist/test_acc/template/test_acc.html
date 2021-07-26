@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" href="../../common/css/main.css" type="text/css" media="all" />
+<title>管理画面:アーティスト仮ID作成</title>
+</head>
+<body>
+	<div class="mainContainer">
+		<div class="headContainer">
+			<div class="headWrap">
+				<h1>UNDEFIND</h1>
+				<p>
+					<a href="http://beyata.minibird.jp/">サイトを確認</a>　|　
+					<a href="../../?out=2NbLQLLmZiwWTMtbRttR">ログアウト</a>
+				</p>
+			</div>
+		</div>
+		<div class="naviContainer">
+			<ul>
+				<li><a href="../../user">ユーザ</a></li>
+				<li><a href="../../artist">アーティスト</a></li>
+				<li><a href="../../audition">オーディション</a></li>
+				<li><a href="../../news">ニュース</a></li>
+				<li><a href="../../movie">動画管理</a></li>
+				<li><a href="../../sound">音楽管理</a></li>
+			</ul>
+		</div>
+		<div class="contentContainer">
+			<div class="titleBox">
+				<h2>アーティスト管理画面</h2>
+			</div>
+			<div class="oneColumnsBox">
+			<h3>アーティスト仮登録アカウント作成</h3>
+			<p>仮アカウント作成が完了しました</p>
+				<table class="nomalTableDeco">
+				<tr>
+				<td>仮ID</td>
+				<td class="white">[data_s:ar_id]</td>
+				</tr>
+				<tr>
+				<td>仮パスワード</td>
+				<td class="white">[data_s:password]</td>
+				</tr>
+				<tr>
+				<td colspan="2" class="nomalTableCenter">メールテンプレート</td>
+				</tr>
+				<tr>
+				<td colspan="2" class="white nomalTableCenter">
+				<textarea cols="60" rows="8" readonly="readonly">
+仮アカウントを作成しましたログインID:[data_s:ar_id]
+ログインパスワード:[data_s:password]
+ログイン後、フォームに情報を入力後本登録完了となります。
+</textarea>
+				</td>
+				</tr>
+				<tr>
+				<td colspan="2" class="white nomalTableCenter">
+				<a href="../">アーティスト一覧へ戻る</a>
+				</td>
+				</tr>
+				</table>
+			</div>
+		</div>
+		<div class="footContainer">
+			<address id="copyright">
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

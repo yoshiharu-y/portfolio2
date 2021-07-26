@@ -1,0 +1,96 @@
+/* CSS Document */
+
+/****************************************************
+
+user_account用CSS
+
+****************************************************/
+
+
+div.content_one_content
+{
+	padding:20px;
+}
+
+
+/****************************************************
+
+profile
+
+****************************************************/
+
+.profile
+{
+}
+
+.profile h3
+{
+	color:#1c2a47;
+	font-size:1.1em;
+	font-weight:bold;
+	margin-bottom:1em;
+}
+
+.profile table
+{
+	border-top:1px solid #aaaaaa;
+	width:100%;
+	font-size:75%;
+}
+
+.profile table th,
+.profile table td
+{
+	border-bottom:1px solid #e9e9e9;
+	padding:10px;
+}
+
+.profile table th.title
+{
+	border-bottom:1px solid #aaaaaa;
+}
+
+.profile table th.subject
+{
+	color:#808080;
+}
+
+.profile table td.edit
+{
+	width:30px;
+}
+
+.profile table td.edit a
+{
+	text-decoration:none;
+	color:#3b5998;
+}
+
+.profile table td.edit a:hover
+{
+	text-decoration:underline;
+}
+
+.profile table th.last,
+.profile table td.last
+{
+	border-bottom:1px solid #aaaaaa;
+}
+
+.hover {
+    background: #f7f7f7;
+}
+
+.profile table th
+{
+	color:#333333;
+	font-weight:bold;
+	width:100px;
+}
+
+.profile table td
+{
+	color:#808080;
+}
+
+

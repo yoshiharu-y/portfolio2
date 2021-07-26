@@ -1,0 +1,24 @@
+/* CSS Document */
+
+/****************************************************
+
+artist
+
+****************************************************/
+
+div.rightWrap div.rightBox div.textBox
+{
+	overflow:hidden;
+	_zoom:1;
+}
+
+div.rightWrap div.rightBox h4
+{
+	margin-bottom:15px;
+}
+
+div.rightWrap div.rightBox div.textBox p
+{
+	margin-bottom:15px;
+	line-height:1.4;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Language" content="ja" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	
+	<meta name="Author" content="" />
+	<meta name="copyright" content="" />
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+	
+	
+	
+	<link rel="stylesheet" href="../common/css/default.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../common/css/common.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/audition_detail.css" type="text/css" media="all" />
+	
+	<script type="text/javascript" src="../common/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../common/js/jquery.corner.js"></script>
+	
+	<script type="text/javascript">
+		$('.top').corner("top 7px");
+		$('.bottom').corner("bottom 7px");
+		$('.wrap').corner("bottom 7px");
+	</script>
+	
+	<title>[data_s:page_title]</title>
+	[data_s:javasc]
+</head>
+<body>
+	<div class="header">
+		<div class="header_box">
+			<h1>
+				<a href="http://beyata.minibird.jp/">
+					<img src="../common/images/logo.gif" width="115" height="20" alt="UnDeFiNd" />
+				</a>
+			</h1>
+			<div class="search_box">
+				<form action="../search/" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="search" />
+					<input type="text" name="search_text" value="アーティスト名を検索" class="text" />
+					<input type="submit" class="search_btn" />
+				</form>
+			</div>
+			<div class="header_navi">
+				<p>
+					<!--<span>[data_s:user_name]</span>-->
+					<span><a href="">アカウント設定 ▼</a></span>
+					<span><a href="">その他 ▼</a></span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="ContentWrap_audition">
+			<div class="rightWrap">
+				<div class="rightTitle top">
+					<h3>[data_s:name]</h3>
+				</div>
+				<div class="rightBox wrap">
+					<div class="textBox bottom">
+						<h4><img src="[data_s:banner_add]" width="950" height="300" /></h4>
+						<h4 id="description">[data_s:head]</h4>
+						<dl>
+						<dt><img src="images/recruit.jpg" width="99" height="25" alt="募集内容" /></dt>
+						<dd>[data_s:detail]</dd>
+						<dt><img src="images/appli.jpg" width="99" height="25" alt="応募資格" /></dt>
+						<dd>[data_s:qualification]</dd>
+						<dt><img src="images/contact.jpg" width="99" height="25" alt="応募方法" /></dt>
+						<dd>[data_s:contact_url]</dd>
+						<!--dt><img src="images/holding.jpg" width="99" height="25" alt="開催期間" /></dt>
+						<dd>[data_s:start_date]～[data_s:end_date]</dd-->
+						<dt><img src="images/treatment.jpg" width="99" height="25" alt="合格後の待遇" /></dt>
+						<dd>[data_s:audition_treatment]</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="rightWrap">
+				<div class="rightTitle top">
+					<h3 id="aud_title">NEWエントリーアーティスト</h3>
+				</div>
+				<div class="rightBox wrap">
+					<div class="textBox new bottom">
+						<div class="artistListWrap">
+						[for_artist_new]
+							<div class="artistListBox">
+								<a href="[data_s:artist_url]">
+									<p class="image"><img src="[data_s:artist_thum]" width="150" height="150" alt="[data_s:artist_name]" /></p>
+									<p class="name">[data_s:artist_name]</p>
+									<p class="point">Point：[data_s:vote_point]</p>
+									<!--[data_s:point_link]-->
+								</a>
+							</div>
+						[end_for_artist_new]
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rightWrap">
+				<div class="rightTitle top">
+					<h3 id="aud_title">参加アーティストランキング</h3>
+				</div>
+				<div class="rightBox wrap">
+					<div class="textBox ranking bottom">
+						<div class="artistListWrap">
+						[for_artist_rank]
+							<div class="artistListBox">
+								<a href="[data_s:artist_url]">
+									<p class="image"><img src="[data_s:artist_thum]" width="150" height="150" alt="[data_s:artist_name]" /></p>
+									<p class="name">[data_s:artist_name]</p>
+									<p class="point">Point：[data_s:vote_point]</p>
+									<!--[data_s:point_link]-->
+								</a>
+							</div>
+						[end_for_artist_rank]
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				<a href="http://beyata.minibird.jp/contact/">contact us</a>
+				<a href="http://beyata.minibird.jp/">UNDEFIND TOP</a>
+			</p>
+			<address>
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

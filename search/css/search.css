@@ -1,0 +1,53 @@
+/* CSS Document */
+
+/****************************************************
+
+news_list
+
+****************************************************/
+
+div.rightWrap div.rightBox div.textBox
+{
+	overflow:hidden;
+	_zoom:1;
+}
+
+div.rightWrap div.rightBox h4
+{
+	margin-bottom:15px;
+}
+
+div.rightWrap div.artistListWrap div.artistListBox
+{
+	float:left;
+	border:1px solid #d5d5d5;
+	width:85px;
+	margin-right:3px;
+	margin-bottom:3px;
+	padding:3px 5px;
+	background:#ffffff;
+}
+
+div.rightWrap div.artistListWrap div.artistListBox p.image
+{
+	text-align:center;
+	margin-bottom:3px;
+	width:84px;
+	height:84px;
+	overflow:hidden;
+}
+
+div.rightWrap div.artistListWrap div.artistListBox p.point
+{
+	margin-bottom:3px;
+}
+
+div.rightWrap div.artistListWrap div.artistListBox p.name
+{
+	margin-bottom:3px;
+}
+
+div.rightWrap div.artistListWrap div.artistListBox p.vote
+{
+	text-align:center;
+}

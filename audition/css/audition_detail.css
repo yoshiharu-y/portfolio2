@@ -1,0 +1,183 @@
+/* CSS Document */
+
+/****************************************************
+
+audition detail
+
+****************************************************/
+
+div.rightWrap
+{
+	margin-bottom:5px;
+}
+
+div.ContentWrap_audition
+{
+	overflow:hidden;
+	_zoom:1;
+	margin-bottom:10px;
+	margin-top:30px;
+}
+
+div.rightTitle
+{
+	width:100%;
+	height:26px;
+	margin-bottom:5px;
+	background:#3b5997;
+	color:#ffffff;
+}
+
+div.rightTitle h3
+{
+	margin-left:10px;
+	padding-top:6px;
+	font-family:'Osaka－等幅','ＭＳ Ｐゴシック';
+	font-weight:bold;
+	color:#ffffff;
+}
+
+/*h3#aud_title
+{
+	color:#FFF;
+}*/
+
+h4#description
+{
+	font-size:120%;
+	font-weight:bold;
+	margin:15px 0 15px 0;
+	line-height:1.5;
+}
+
+div.rightWrap div.rightBox dl
+{
+	/*margin-top:15px;*/
+	overflow:hidden;
+	_zoom:1;
+}
+
+div.rightWrap div.rightBox dl dt
+{
+	/*margin-right:10px;*/
+	width:99px;
+	height:25px;
+	float:left;
+	clear:both;
+}
+
+div.rightWrap div.rightBox dl dd
+{
+	margin-top:2px;
+	margin-bottom:15px;
+	line-height:1.5;
+	width:820px;
+	float:right;
+}
+
+
+/*div.rightWrap div.rightBox div.textBox p
+{
+	margin-bottom:15px;
+	line-height:1.4;
+}*/
+
+/****************************************************
+
+new entry artist
+
+****************************************************/
+
+div.new
+{
+}
+
+div.rightWrap div.artistListWrap
+{
+	overflow:hidden;
+	_zoom:1;
+	padding:8px;
+	margin-right:-8px;
+	background:#eeeeee;
+}
+
+div.rightWrap div.artistListWrap div.artistListBox
+{
+	float:left;
+}
+
+div.rightWrap div.artistListWrap div.artistListBox a
+{
+	display:block;
+	text-decoration:none;
+	border:1px solid #cfcfcf;
+	width:162px;
+	padding:8px;
+	margin-right:8px;
+	margin-bottom:8px;
+	background:#ffffff;
+}
+
+div.rightWrap div.artistListWrap div.artistListBox:hover > a
+{
+	background:#c8ddfd;
+}
+
+div.rightWrap div.artistListWrap div.artistListBox a:hover
+{
+	background:#c8ddfd;
+}
+
+div.rightWrap div.artistListWrap div.artistListBox p.image
+{
+	text-align:center;
+	margin-bottom:15px;
+	border:1px solid #e3e3e3;
+	background:#ffffff;
+}
+
+div.rightWrap div.artistListWrap div.artistListBox p.point
+{
+	color:#bfbfbf;
+	font-size:90%;
+}
+
+div.rightWrap div.artistListWrap div.artistListBox p.name
+{
+	color:#34588e;
+	font-family:"メイリオ";
+	font-size:90%;
+}
+
+div.rightWrap div.artistListWrap div.artistListBox p.vote
+{
+	text-align:center;
+}
+
+/****************************************************
+
+entry artist　ranking
+上記のCSSを併用する
+
+****************************************************/
+
+div.ranking
+{
+	margin-bottom:0!important;
+	padding:7px!important;
+}
+
+/****************************************************
+
+footer
+デザインがここだけ違うので変更
+
+****************************************************/
+
+.footer
+{
+	margin-left:0;
+	margin-bottom:50px;
+	border-top:1px solid #;
+	border-top:1px solid #c3c3c3;
+}

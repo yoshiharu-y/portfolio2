@@ -1,0 +1,108 @@
+/* CSS Document */
+
+
+
+
+/****************************************************
+
+common
+
+****************************************************/
+
+
+div.content_one_content
+{
+	padding:20px;
+}
+
+/****************************************************
+
+upload
+
+****************************************************/
+
+
+.upload h3
+{
+	color:#1c2a47;
+	font-size:1.1em;
+	font-weight:bold;
+	margin-bottom:1em;
+}
+
+div.imagesWrap
+{
+	overflow:hidden;
+	_zoom:1;
+	margin-bottom:20px;
+	background:#efefef;
+}
+
+div.imagesWrap div
+{
+	float:left;
+	width:200px;
+	text-align:center;
+	padding:20px;
+}
+
+div.imagesWrap div p
+{
+	margin-top:10px;
+}
+
+/****************************************************
+
+upload btn
+
+****************************************************/
+
+div.btnWrap
+{
+	overflow:hidden;
+	_zoom:1;
+}
+
+div.btnWrap p
+{
+	margin-bottom:1em;
+}
+
+.submit
+{
+    display:block;
+    width:62px;
+    height:25px;
+    padding:0;
+    border:0;
+    background:url(../../../common/images/choice_btn.gif) no-repeat left top;
+    text-indent:-9898px;
+    font-size: 0px;
+    line-height: 0px;
+    cursor:pointer;
+}
+
+.submit:hover,
+.submit:focus {
+    background-position:left -25px;
+}
+
+.send_submit
+{
+    display:block;
+    width:85px;
+    height:25px;
+    padding:0;
+    border:0;
+    background:url(../../../common/images/upload_btn.gif) no-repeat left top;
+    text-indent:-9898px;
+    font-size: 0px;
+    line-height: 0px;
+    cursor:pointer;
+}
+
+.send_submit:hover,
+.send_submit:focus {
+    background-position:left -25px;
+}
+

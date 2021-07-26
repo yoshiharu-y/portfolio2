@@ -1,0 +1,114 @@
+/* CSS Document */
+
+.loginBox
+{
+	width:610px;
+	margin:70px auto 30px auto;
+	border:1px solid #cccccc;
+	padding:20px 15px;
+}
+
+.loginBox h3
+{
+	color:#1c2a47;
+	font-size:1.2em;
+	font-weight:bold;
+	padding-bottom:10px;
+	border-bottom:1px solid #cccccc;
+	margin-bottom:20px;
+}
+
+.loginBox dl
+{
+	width:300px;
+	margin:0 auto;
+}
+
+.loginBox dl dt
+{
+	clear: left;
+	float: left;
+	font-size:80%;
+	color:#666666;
+	margin: 0 0 0.8em;
+	width: 7em;
+	padding-top:0.5em;
+}
+
+.loginBox dl dd
+{
+	margin-bottom: 0.8em;
+	margin-left: 7em;
+}
+
+.submit
+{
+    display:block;
+    width:62px;
+    height:25px;
+    padding:0;
+    border:0;
+    background:url(../../common/images/login_btn.gif) no-repeat left top;
+    text-indent:-9898px;
+    font-size: 0px;
+    line-height: 0px;
+    cursor:pointer;
+	float:left;
+}
+
+.submit:hover,
+.submit:focus {
+    background-position:left -25px;
+}
+
+.text1
+{
+	font-size:75%;
+	margin-left:1em;
+	line-height:25px;
+}
+
+.text1 a
+{
+	text-decoration:none;
+	color:#3b5998;
+	font-weight:bold;
+}
+
+.text1 a:hover
+{
+	text-decoration:underline;
+}
+
+.text2
+{
+	font-size:75%;
+}
+
+.text2 a
+{
+	text-decoration:none;
+	color:#3b5998;
+	font-weight:bold;
+}
+
+.text2 a:hover
+{
+	text-decoration:underline;
+}
+
+.coutionBox
+{
+	border:1px solid #dd3c10;
+	background:#ffebe8;
+	padding:1em;
+	font-size:0.75em;
+	margin-bottom:20px;
+}
+
+.footer
+{
+	font-size:0.8em;
+	padding-top:10px;
+	color:#666666;
+}

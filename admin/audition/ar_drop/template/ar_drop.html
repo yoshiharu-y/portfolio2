@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="../../common/js/jquery.tablesorter.min.js"></script>
+<link rel="stylesheet" href="../../common/css/main.css" type="text/css" media="all" />
+<link rel="stylesheet" href="../../common/theme/style.css" type="text/css" id="" media="print, projection, screen" />
+<title>管理画面:参加アーティスト削除</title>
+</head>
+<body>
+	<div class="mainContainer">
+		<div class="headContainer">
+			<div class="headWrap">
+				<h1>UNDEFIND</h1>
+				<p>
+					<a href="http://beyata.minibird.jp/">サイトを確認</a>　|　
+					<a href="../../?out=2NbLQLLmZiwWTMtbRttR">ログアウト</a>
+				</p>
+			</div>
+		</div>
+		<div class="naviContainer">
+			<ul>
+				<li><a href="../../user">ユーザ</a></li>
+				<li><a href="../../artist">アーティスト</a></li>
+				<li><a href="../../audition">オーディション</a></li>
+				<li><a href="../../news">ニュース</a></li>
+				<li><a href="../../movie">動画管理</a></li>
+				<li><a href="../../sound">音楽管理</a></li>
+			</ul>
+		</div>
+		<div class="contentContainer">
+			<div class="titleBox">
+				<h2>オーディション管理画面</h2>
+			</div>
+			<div class="oneColumnsBox">
+				<table class="nomalTableDeco">
+				<tr>
+				<td>イベントナンバー</td>
+				<td>タイトル</td>
+				<td>募集開始日時</td>
+				<td>募集終了日時</td>
+				<td>開始日時</td>
+				<td>終了日時</td>
+				</tr>
+				<tr>
+				<td class="white">[data_s:aud_seq_num]</td>
+				<td class="white">[data_s:page_title]</td>
+				<td class="white">[data_s:entry_start]</td>
+				<td class="white">[data_s:entry_end]</td>
+				<td class="white">[data_s:start_date]</td>
+				<td class="white">[data_s:end_date]</td>
+				</tr>
+				</table>
+				<h3>参加アーティスト一覧</h3>
+				[data_s:err_det]
+				<form action="" method="post">
+				<table class="tablesorter" id="sort_table">
+				<thead>
+				<tr>
+				<th>アーティストID</th>
+				<th>アーティスト名</th>
+				<th>年齢</th>
+				<th>性別</th>
+				<th>取得ポイント</th>
+				<th>削除チェック</th>
+				</tr>
+				</thead>
+				<tbody>
+				[for_artist]
+				<tr>
+				<td>[data_s:ar_id]</td>
+				<td>[data_s:artist_name]</td>
+				<td>[data_s:age]</td>
+				<td>[data_s:sex]</td>
+				<td>[data_s:ar_point]</td>
+				<td class="submit">
+				<input type="checkbox" name="ar_[data_s:ar_id]" value="[data_s:ar_form_check]" />
+				</td>
+				</tr>
+				[end_for_artist]
+				</tbody>			
+				</table>
+				<p><input type="checkbox" name="ar_drop_check" value="check" />削除確認チェック</p>
+				<p><input type="hidden" name="audition_no" value="[data_s:audition_no]" />
+				<input type="submit" name="ar_drop_comp" value="オーディションから削除する" class="formBtn" /></p>
+				</form>
+			</div>
+		</div>
+		<div class="footContainer">
+			<address id="copyright">
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

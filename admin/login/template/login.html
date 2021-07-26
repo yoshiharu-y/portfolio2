@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../common/css/main.css" type="text/css" media="all" />
+<title>管理画面</title>
+</head><body>
+	<div class="mainContainer">
+		<div class="headContainer">
+			<div class="headWrap">
+				<h1>UNDEFIND</h1>
+				<p>
+					<a href="http://beyata.minibird.jp/">サイトを確認</a>　|　
+					<a href="../?out=2NbLQLLmZiwWTMtbRttR">ログアウト</a>
+				</p>
+			</div>
+		</div>
+		<div class="naviContainer">
+			<ul>
+				<li><a href="../user">ユーザ</a></li>
+				<li><a href="../artist">アーティスト</a></li>
+				<li><a href="../audition">オーディション</a></li>
+				<li><a href="../news">ニュース</a></li>
+				<li><a href="../movie">動画管理</a></li>
+				<li><a href="../sound">音楽管理</a></li>
+			</ul>
+		</div>
+		<div class="contentContainer">
+			<div class="titleBox">
+				<h2>管理画面ログイン</h2>
+			</div>
+			<div class="oneColumnsBox">
+			
+			<form action="" method="post" enctype="multipart/form-data">
+				<table class="nomalTableDeco center">
+				<tr>
+				<td>ログインID</td>
+				<td class="white"><input type="text" name="login_id" value="[data_s:login_id]" /></td>
+				</tr>
+				<tr>
+				<td>パスワード</td>
+				<td class="white"><input type="password" name="password" value="[data_s:password]" /></td>
+				</tr>
+				<tr>
+				<td colspan="2" class="white nomalTableCenter">
+				[data_s:login_err]
+				<input type="submit" name="mms_admin_login" value="管理画面にログインする" class="formBtn" />
+				</td>
+				</tr>
+				</table>
+				</form>
+			</div>
+		</div>
+		<div class="footContainer">
+			<address id="copyright">
+				<script type="text/javascript" src="../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

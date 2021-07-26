@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Language" content="ja" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	
+	<meta name="Author" content="" />
+	<meta name="copyright" content="" />
+	<meta name="robots" content="NOINDEX,NOFOLLOW" />
+	
+	
+	
+	<link rel="stylesheet" href="../common/css/default.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="../common/css/common.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/view.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/sound.css" type="text/css" media="all" />
+	
+	<script type="text/javascript" src="../common/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../common/js/jquery.corner.js"></script>
+	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jplayer.inspector.js"></script>
+
+	<title>[data_s:artist_name]さんのマイページ</title>
+	
+	<script type="text/javascript">
+		$('.top').corner("top 7px");
+		$('.bottom').corner("bottom 7px");
+		$('.wrap').corner("bottom 7px");
+	</script>
+</head>
+<body>
+[data_s:javasc]
+	<div class="header">
+		<div class="header_box">
+			<h1>
+				<a href="http://beyata.minibird.jp/">
+					<img src="../common/images/logo.gif" width="115" height="20" alt="UnDeFiNd" />
+				</a>
+			</h1>
+			<div class="search_box">
+				<form action="../search/" method="post" enctype="multipart/form-data">
+					<input type="hidden" name="search" />
+					<input type="text" name="search_text" value="アーティスト名を検索" class="text" />
+					<input type="submit" class="search_btn" />
+				</form>
+			</div>
+			<div class="header_navi">
+				<p>
+					<!--<span>[data_s:user_name]</span>-->
+					<span><a href="">アカウント設定 ▼</a></span>
+					<span><a href="">その他 ▼</a></span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="ContentWrap_top">
+			<div class="artistNameWrap">
+				<div class="artistNameTitle top">
+					<h3>
+						アーティスト名
+					</h3>
+				</div>
+				<div class="artistNameBox wrap">
+					<div class="borderBox bottom">
+						<p>[data_s:artist_name]</p>
+					</div>
+				</div>
+			</div>
+			<div class="artistPointWrap">
+				<div class="artistNameTitle top">
+					<h3>
+						総ポイント
+					</h3>
+				</div>
+				<div class="artistPointBox wrap">
+					<div class="borderBox bottom">
+						<p>[data_s:vote_point]&nbsp;pt</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ContentWrap_middle">
+			<div class="artistPhotoWrap">
+				<div class="artistPhotoTitle top">
+					<h3>
+						イメージ画像
+					</h3>
+					<div class="listArea">
+						[data_s:favorite_html]
+					</div>
+				</div>
+				<div class="artistPhotoBox wrap">
+					<div class="borderBox bottom">
+						<p class="photo"><img src="[data_s:artist_thum]" alt=""/></p>
+					</div>
+				</div>
+			</div>
+			<div class="artistMovieWrap">
+				<div class="artistMovieTitle top">
+					<h3>
+						動画
+					</h3>
+				</div>
+				<div class="artistMovieBox wrap">
+					<div class="borderBox bottom">
+						<p>
+							[data_s:movie_html]
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ContentWrap_bottom">
+			<div class="leftWrap">
+				<div class="artistMusicWrap">
+					<div class="artistMusicTitle top">
+						<h3>
+							ミュージック
+						</h3>
+					</div>
+					<div class="artistMusicBox wrap">
+						<div class="borderBox bottom">
+							[for_sound]
+								<p>[data_s:sound_html]</p>
+								<p>[data_s:sound_title]</p>
+								<p></p>
+								<script type="text/javascript">
+									$(function(){
+										$("#audio_player").jPlayer({
+											/* イベントハンドラ */
+											ready: function(){
+											/* 再生するメディアの定義 */
+											$(this).jPlayer("setMedia", {
+												mp3: "[data_s:sound_html]"
+												}).jPlayer("stop");
+											},
+											/* 音量 */
+											volume: 0.3,
+											/* リピート再生 */
+											ended: function (event) {
+												//   $(this).jPlayer("play");
+											},
+											/* Jplayer.swfのパス */
+											swfPath: "js/",
+											/* フォーマット優先度 */
+											supplied: "mp3"
+										})
+										.bind($.jPlayer.event.play, function() {
+										$(this).jPlayer("pauseOthers");
+										});
+									});
+								</script>
+								<div id="audio_player[data_s:seq_num]" class="jp-jplayer"></div>
+								<div class="jp-audio">
+									<div class="jp-type-single">								
+										<div id="jp_interface_1" class="jp-interface">
+											<ul class="jp-controls">
+												<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+												<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+												<li><a href="javascript:;" class="jp-mute" tabindex="1">mute</a></li>
+												<li><a href="javascript:;" class="jp-unmute" tabindex="1">unmute</a></li>			
+											</ul>
+											<div class="jp-progress">
+												<div class="jp-seek-bar">
+													<div class="jp-play-bar"></div>
+												</div>
+											</div>
+											<div class="jp-volume-bar">
+												<div class="jp-volume-bar-value"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							[end_for_sound]
+						</div>
+					</div>
+				</div>
+				<div class="artistNewsWrap">
+					<div class="artistNewsTitle top">
+						<h3>
+							インフォメーション
+						</h3>
+					</div>
+					<div class="artistNewsBox wrap">
+						<div class="borderBox bottom">
+							<p>[data_s:news]</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rightWrap">
+				<div class="artistProfileWrap">
+					<div class="artistProfileTitle top">
+						<h3>
+							プロフィール
+						</h3>
+					</div>
+					<div class="artistProfileBox wrap">
+						<div class="borderBox bottom">
+							<p>[data_s:detail]</p>
+						</div>
+					</div>
+				</div>
+				<div class="artistMessageWrap">
+					<div class="artistMessageTitle top">
+						<h3>
+							ユーザーからのコメント
+						</h3>
+					</div>
+					<div class="artistMessageBox">
+						<div class="borderBox">
+							<div class="messageListWrap">
+							[for_message]
+								<div class="messageListBox">
+									<p class="icon">
+										<img src="[data_s:user_thum]" height="100%" alt="[data_s:user_name]" />
+									</p>
+									<div class="text">
+										<p class="name">[data_s:user_name]</p>
+										<p class="date">[data_s:comment]</p>
+									</div>
+								</div>
+							[end_for_message]
+							</div>
+						</div>
+					</div>
+					<div class="artistMessageCmt bottom">
+						<form action="" method="post" enctype="multipart/form-data">
+							<p>[data_s:comment_btn]</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="ContentWrap_audition">
+			<div class="auditionTitle top">
+				<h3>
+					参加中のオーディション
+				</h3>
+			</div>
+			<div class="auditionWrap">
+			[for_audition]
+				<table class="auditionTable [data_s:position]" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td colspan="3">
+							<p>
+								<a href="[data_s:aud_link]">
+									<img src="[data_s:banner_add]" width="472" height="120" alt="[data_s:name]" />
+								</a>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="left">
+							<p>
+								現在<span>[data_s:aud_rank]</span>位
+							</p>
+						</td>
+						<td class="center">
+							<p>
+								現在<span>[data_s:ar_point]</span>
+							</p>
+						</td>
+						<td class="right">
+						[data_s:aud_point_link]
+						</td>
+					</tr>
+				</table>
+			[end_for_audition]
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				<a href="http://beyata.minibird.jp/contact/">contact us</a>
+				<a href="http://beyata.minibird.jp/">UNDEFIND TOP</a>
+			</p>
+			<address>
+				<script type="text/javascript" src="../../common/js/copyright.js"></script>
+			</address>
+		</div>
+	</div>
+</body>
+</html>

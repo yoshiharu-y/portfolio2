@@ -1,0 +1,619 @@
+/* CSS Document */
+
+/****************************************************
+
+artistName
+
+****************************************************/
+
+div.ContentWrap_top
+{
+	overflow:hidden;
+	_zoom:1;
+	margin-bottom:10px;
+	margin-top:30px;
+}
+
+div.ContentWrap_top div.artistNameWrap
+{
+	float:left;
+	width:721px;
+}
+
+div.ContentWrap_top div.artistNameWrap div.artistNameTitle
+{
+	width:720px;
+	height:26px;
+	background:#3b5997;
+}
+
+div.ContentWrap_top div.artistNameWrap div.artistNameTitle h3
+{
+	margin-left:10px;
+	padding-top:6px;
+	font-family:'Osaka－等幅','ＭＳ Ｐゴシック';
+	font-weight:bold;
+	color:#ffffff;
+}
+
+div.ContentWrap_top div.artistNameWrap div.artistNameBox
+{
+	width:718px;
+	background:#c2c0c1;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+div.ContentWrap_top div.artistNameWrap div.artistNameBox div.borderBox
+{
+	background:#ffffff;
+}
+
+div.ContentWrap_top div.artistNameWrap div.artistNameBox p
+{
+	font-size:1.5em;
+	font-weight:bold;
+	color:#b8b9ce;
+	padding:10px;
+}
+
+/****************************************************
+
+artistPoint
+
+****************************************************/
+
+div.ContentWrap_top div.artistPointWrap
+{
+	float:right;
+	width:220px;
+}
+
+div.ContentWrap_top div.artistPointWrap div.artistNameTitle
+{
+	width:220px;
+	height:26px;
+	background:#3b5997;
+}
+
+div.ContentWrap_top div.artistPointWrap div.artistNameTitle h3
+{
+	margin-left:10px;
+	padding-top:6px;
+	font-family:'Osaka－等幅','ＭＳ Ｐゴシック';
+	font-weight:bold;
+	color:#ffffff;
+}
+
+div.ContentWrap_top div.artistPointWrap div.artistPointBox
+{
+	width:218px;
+	background:#c2c0c1;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+div.ContentWrap_top div.artistPointWrap div.artistPointBox div.borderBox
+{
+	background:#ffffff;
+}
+
+div.ContentWrap_top div.artistPointWrap div.artistPointBox p
+{
+	font-size:1.5em;
+	font-weight:bold;
+	color:#b8b9ce;
+	padding:10px;
+}
+
+div.ContentWrap_top div.artistPointWrap div.artistPointBox p span
+{
+	color:#3b5998;
+	font-weight:bold;
+}
+
+/****************************************************
+
+artistPhoto
+
+****************************************************/
+
+div.ContentWrap_middle
+{
+	overflow:hidden;
+	_zoom:1;
+	margin-bottom:10px;
+}
+
+div.ContentWrap_middle div.artistPhotoWrap
+{
+	float:left;
+}
+
+div.ContentWrap_middle div.artistPhotoWrap div.artistPhotoTitle
+{
+	width:375px;
+	height:26px;
+	overflow:hidden;
+	_zoom:1;
+	background:#3b5997;
+	color:#ffffff;
+}
+
+div.ContentWrap_middle div.artistPhotoWrap div.artistPhotoTitle h3
+{
+	float:left;
+	margin-left:10px;
+	padding-top:6px;
+	font-family:'Osaka－等幅','ＭＳ Ｐゴシック';
+	font-weight:bold;
+	color:#ffffff;
+}
+
+div.ContentWrap_middle div.artistPhotoWrap div.artistPhotoTitle div.listArea
+{
+	float:right;
+	line-height:26px;
+	margin-right:8px;
+	font-size:0.9em;
+}
+
+div.ContentWrap_middle div.artistPhotoWrap div.artistPhotoTitle div.listArea .submit
+{
+    display:block;
+    width:112px;
+    height:20px;
+    padding:0;
+	margin-top:3px;
+	margin-right:10px;
+    border:0;
+    background:url(../../common/images/favo_btn.gif) no-repeat left top;
+    text-indent:-9898px;
+    font-size: 0px;
+    line-height: 0px;
+    cursor:pointer;
+}
+
+div.ContentWrap_middle div.artistPhotoWrap div.artistPhotoTitle div.listArea .submit:hover,
+div.ContentWrap_middle div.artistPhotoWrap div.artistPhotoTitle div.listArea .submit:focus {
+    background-position:left -20px;
+}
+
+div.ContentWrap_middle div.artistPhotoWrap div.artistPhotoBox
+{
+	width:373px;
+	background:#c2c0c1;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+div.ContentWrap_middle div.artistPhotoWrap div.artistPhotoBox div.borderBox
+{
+	padding:16px 0;
+	background:#ffffff;
+}
+
+div.ContentWrap_middle div.artistPhotoWrap div.artistPhotoBox p.photo
+{
+	overflow:hidden;
+	_zoom:1;
+	width:362px;
+	margin:0 auto;
+	border-bottom:3px solid #b2b3b3;
+	border-top:3px solid #b2b3b3;
+}
+
+/****************************************************
+
+artistMovie
+
+****************************************************/
+
+div.ContentWrap_middle div.artistMovieWrap
+{
+	float:right;
+}
+
+div.ContentWrap_middle div.artistMovieWrap div.artistMovieTitle
+{
+	width:565px;
+	height:26px;
+	background:#3b5997;
+	color:#ffffff;
+}
+
+div.ContentWrap_middle div.artistMovieWrap div.artistMovieTitle h3
+{
+	margin-left:10px;
+	padding-top:6px;
+	font-family:'Osaka－等幅','ＭＳ Ｐゴシック';
+	font-weight:bold;
+	color:#ffffff;
+}
+
+div.ContentWrap_middle div.artistMovieWrap div.artistMovieBox
+{
+	width:563px;
+	background:#c2c0c1;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+div.ContentWrap_middle div.artistMovieWrap div.artistMovieBox div.borderBox
+{
+	padding:9px 0;
+	background:#ffffff;
+}
+
+div.ContentWrap_middle div.artistMovieWrap div.artistMovieBox p
+{
+	padding:0 6px;
+}
+
+/****************************************************
+
+Music
+
+****************************************************/
+
+div.ContentWrap_bottom
+{
+	overflow:hidden;
+	_zoom:1;
+	margin-bottom:10px;
+}
+
+div.ContentWrap_bottom div.leftWrap
+{
+	float:left;
+	width:375px;
+}
+
+div.ContentWrap_bottom div.rightWrap
+{
+	float:right;
+	width:565px;
+}
+
+div.ContentWrap_bottom div.leftWrap div.artistMusicWrap
+{
+	margin-bottom:10px;
+}
+
+div.leftWrap div.artistMusicWrap div.artistMusicTitle
+{
+	width:375px;
+	height:26px;
+	background:#3b5997;
+	color:#ffffff;
+}
+
+div.leftWrap div.artistMusicWrap div.artistMusicTitle h3
+{
+	margin-left:10px;
+	padding-top:6px;
+	font-family:'Osaka－等幅','ＭＳ Ｐゴシック';
+	font-weight:bold;
+	color:#ffffff;
+}
+
+div.leftWrap div.artistMusicWrap div.artistMusicBox
+{
+	background:#c2c0c1;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+div.leftWrap div.artistMusicWrap div.artistMusicBox div.borderBox
+{
+	background:#ffffff;
+	clear:both;
+	padding:10px 3px;
+}
+
+div.leftWrap div.artistMusicWrap div.artistMusicBox p
+{
+	padding:0 6px;
+	font-size:0.8em;
+}
+
+/****************************************************
+
+infomation
+
+****************************************************/
+
+div.leftWrap div.artistNewsWrap div.artistNewsTitle
+{
+	width:375px;
+	height:26px;
+	background:#3b5997;
+	color:#ffffff;
+}
+
+div.leftWrap div.artistNewsWrap div.artistNewsTitle h3
+{
+	margin-left:10px;
+	padding-top:6px;
+	font-family:'Osaka－等幅','ＭＳ Ｐゴシック';
+	font-weight:bold;
+	color:#ffffff;
+}
+
+div.leftWrap div.artistNewsWrap div.artistNewsBox
+{
+	width:373px;
+	background:#c2c0c1;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+div.leftWrap div.artistNewsWrap div.artistNewsBox div.borderBox
+{
+	background:#ffffff;
+}
+
+div.leftWrap div.artistNewsWrap div.artistNewsBox p
+{
+	padding:10px;
+	font-size:0.8em;
+	line-height:1.5em;
+}
+
+/****************************************************
+
+Profile
+
+****************************************************/
+
+div.rightWrap div.artistProfileWrap
+{
+	margin-bottom:10px;
+}
+
+div.rightWrap div.artistProfileWrap div.artistProfileTitle
+{
+	width:565px;
+	height:26px;
+	background:#3b5997;
+	color:#ffffff;
+}
+
+div.rightWrap div.artistProfileWrap div.artistProfileTitle h3
+{
+	margin-left:10px;
+	padding-top:6px;
+	font-family:'Osaka－等幅','ＭＳ Ｐゴシック';
+	font-weight:bold;
+	color:#ffffff;
+}
+
+div.rightWrap div.artistProfileWrap div.artistProfileBox
+{
+	width:563px;
+	background:#c2c0c1;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+div.rightWrap div.artistProfileWrap div.artistProfileBox div.borderBox
+{
+	background:#ffffff;
+}
+
+div.rightWrap div.artistProfileWrap div.artistProfileBox p
+{
+	padding:10px;
+	font-size:0.8em;
+	line-height:1.5em;
+}
+
+/****************************************************
+
+artistmessage
+
+****************************************************/
+
+div.rightWrap div.artistMessageWrap div.artistMessageTitle
+{
+	width:565px;
+	height:26px;
+	background:#3b5997;
+	color:#ffffff;
+}
+
+div.rightWrap div.artistMessageWrap div.artistMessageTitle h3
+{
+	margin-left:10px;
+	padding-top:6px;
+	font-family:'Osaka－等幅','ＭＳ Ｐゴシック';
+	font-weight:bold;
+	color:#ffffff;
+}
+
+div.rightWrap div.artistMessageWrap div.artistMessageBox
+{
+	width:563px;
+	background:#c2c0c1;
+	padding-bottom:1px;
+	padding-left:1px;
+	padding-right:1px;
+}
+
+div.rightWrap div.artistMessageWrap div.artistMessageBox div.borderBox
+{
+	background:#ffffff;
+	padding:5px;
+}
+
+div.rightWrap div.artistMessageWrap div.artistMessageBox div.messageListWrap
+{
+	padding:5px;
+	background:#efefef;
+	border:1px solid #bababa;
+}
+
+div.rightWrap div.artistMessageWrap div.artistMessageBox div.messageListBox
+{
+	margin-bottom:5px;
+	padding-bottom:5px;
+	border-bottom:2px solid #ffffff;
+	overflow:hidden;
+	_zoom:1;
+}
+
+div.rightWrap div.artistMessageWrap div.artistMessageBox div.messageListBox p.icon
+{
+	margin-right:10px;
+	width:53px;
+	height:53px;
+	float:left;
+	text-align:center;
+}
+
+
+div.rightWrap div.artistMessageWrap div.artistMessageBox div.messageListBox div.text p.name
+{
+	color:#3b5998;
+	font-weight:bold;
+	margin-bottom:1em;
+	margin-top:7px;
+	font-size:0.8em;
+}
+
+div.rightWrap div.artistMessageWrap div.artistMessageBox div.messageListBox div.text p.date
+{
+	font-size:0.8em;
+	line-height:1.5em;
+}
+
+div.artistMessageCmt
+{
+	background:#3b5997;
+	text-align:right;
+	height:26px;
+	padding:0 10px;
+}
+
+div.artistMessageCmt p
+{
+	line-height:25px;
+}
+
+div.artistMessageCmt p input.submit
+{
+	vertical-align:text-bottom;
+}
+
+/****************************************************
+
+audition
+
+****************************************************/
+
+div.auditionTitle
+{
+	width:100%;
+	height:26px;
+	margin-bottom:5px;
+	background:#ee87a1;
+	color:#ffffff;
+}
+
+div.auditionTitle h3
+{
+	margin-left:10px;
+	padding-top:6px;
+	font-family:'Osaka－等幅','ＭＳ Ｐゴシック';
+	font-weight:bold;
+	color:#ffffff;
+}
+
+div.auditionWrap
+{
+	overflow:hidden;
+	_zoom:1;
+	margin-bottom:50px;
+}
+
+div.auditionWrap table.auditionTable
+{
+	width:472px;
+	margin-bottom:5px;
+}
+
+div.auditionWrap table.left
+{
+	float:left;
+}
+
+div.auditionWrap table.right
+{
+	float:right;
+}
+
+
+div.auditionWrap table.auditionTable tr td
+{
+	vertical-align:bottom;
+}
+
+div.auditionWrap table.auditionTable tr td.left,
+div.auditionWrap table.auditionTable tr td.center,
+div.auditionWrap table.auditionTable tr td.right
+{
+	padding:5px 0;
+}
+
+div.auditionWrap table.auditionTable tr td.left
+{
+	vertical-align:bottom;
+	width:150px;
+}
+
+div.auditionWrap table.auditionTable tr td.right
+{
+	width:110px;
+}
+
+div.auditionWrap table.auditionTable tr td.left span
+{
+	color:#e5007f;
+	font-size:2em;
+	font-weight:bold;
+}
+
+div.auditionWrap table.auditionTable tr td.center p
+{
+	padding:0 10px;
+}
+
+div.auditionWrap table.auditionTable tr td.center span
+{
+	color:#e5007f;
+	font-size:2em;
+	font-weight:bold;
+}
+
+/****************************************************
+
+footer
+デザインがここだけ違うので変更
+
+****************************************************/
+
+.footer
+{
+	margin-left:0;
+	margin-bottom:50px;
+	border-top:1px solid #;
+	border-top:1px solid #c3c3c3;
+}
+
